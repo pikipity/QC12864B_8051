@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 23:17:28 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 23:17:28 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -126,7 +126,7 @@ line level    source
  115   1              lcd_write_command((x/16)|0x80);
  116   1              //write data
  117   1              lcd_write_data(highdata);
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 3   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 23:17:28 PAGE 3   
 
  118   1              lcd_write_data(lowdata);
  119   1              //go back to basic command
@@ -190,7 +190,7 @@ line level    source
  177   3                      }else{
  178   3                              e=e+2*dx;
  179   3                      }
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 4   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 23:17:28 PAGE 4   
 
  180   2                      //according to e, adjust whether should go upper
  181   2                      if(e<=0){
@@ -212,16 +212,39 @@ line level    source
  197   3                      }
  198   2              }
  199   1      }
+ 200          
+ 201          void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char num_y,bit fill){
+ 202   1              //x: right upper coner x
+ 203   1              //y: right upper coner y
+ 204   1              //num_x: number of pixels in x
+ 205   1              //num_y: number os pixels in y
+ 206   1              //fill: fill or not
+ 207   1              if(fill){
+ 208   2                      unsigned char i;
+ 209   2                      for(i=y;i<y+num_y;i++){
+ 210   3                              draw_line(x,i,x+num_x-1,i);
+ 211   3                      }
+ 212   2              }else{
+ 213   2                      draw_line(x,y,x,y+num_y-1);
+ 214   2                      draw_line(x,y,x+num_x-1,y);
+ 215   2                      draw_line(x+num_x-1,y+num_y-1,x+num_x-1,y);
+ 216   2                      draw_line(x+num_x-1,y+num_y-1,x,y+num_y-1);
+ 217   2              }
+ 218   1      }
+ 219          
+ 220          void draw_frame(void){
+ 221   1              draw_box(0,0,128,64,0);
+ 222   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    614    ----
+   CODE SIZE        =    751    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----      14
+   DATA SIZE        =   ----      19
    IDATA SIZE       =   ----    ----
-   BIT SIZE         =   ----       2
+   BIT SIZE         =   ----       3
 END OF MODULE INFORMATION.
 
 

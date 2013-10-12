@@ -197,3 +197,26 @@ void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char 
 		}
 	}
 }
+
+void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char num_y,bit fill){
+	//x: right upper coner x
+	//y: right upper coner y
+	//num_x: number of pixels in x
+	//num_y: number os pixels in y
+	//fill: fill or not
+	if(fill){
+		unsigned char i;
+		for(i=y;i<y+num_y;i++){
+			draw_line(x,i,x+num_x-1,i);
+		}
+	}else{
+		draw_line(x,y,x,y+num_y-1);
+		draw_line(x,y,x+num_x-1,y);
+		draw_line(x+num_x-1,y+num_y-1,x+num_x-1,y);
+		draw_line(x+num_x-1,y+num_y-1,x,y+num_y-1);
+	}
+}
+
+void draw_frame(void){
+	draw_box(0,0,128,64,0);
+}

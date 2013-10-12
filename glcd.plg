@@ -710,3 +710,230 @@ linking...
 Program Size: data=23.2 xdata=0 code=752
 creating hex file from "glcd"...
 "glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.2 xdata=0 code=776
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.2 xdata=0 code=695
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+GLCD.H(62): error C141: syntax error near 'char', expected ')'
+GLCD_TEST.C(4): error C132: 'draw': not in formal parameter list
+GLCD_TEST.C(4): error C141: syntax error near '{'
+GLCD_TEST.C(5): error C132: 'draw_line': not in formal parameter list
+GLCD_TEST.C(6): error C141: syntax error near '}'
+compiling glcd.c...
+GLCD.H(62): error C141: syntax error near 'char', expected ')'
+GLCD.C(5): error C132: 'waiting': not in formal parameter list
+GLCD.C(5): error C141: syntax error near '{'
+GLCD.C(7): error C244: 'RS': can't initialize, bad type or class
+GLCD.C(7): error C132: 'RS': not in formal parameter list
+GLCD.C(8): error C244: 'RW': can't initialize, bad type or class
+GLCD.C(8): error C132: 'RW': not in formal parameter list
+GLCD.C(9): error C244: 'En': can't initialize, bad type or class
+GLCD.C(9): error C132: 'En': not in formal parameter list
+GLCD.C(10): error C244: 'P0': can't initialize, bad type or class
+GLCD.C(10): error C132: 'P0': not in formal parameter list
+GLCD.C(11): error C244: 'En': can't initialize, bad type or class
+GLCD.C(11): error C132: 'En': not in formal parameter list
+GLCD.C(12): error C141: syntax error near 'if'
+GLCD.C(12): error C141: syntax error near '&', expected ')'
+GLCD.C(201): error C141: syntax error near 'char', expected ')'
+GLCD.C(207): error C202: 'fill': undefined identifier
+GLCD.C(209): error C202: 'y': undefined identifier
+GLCD.C(210): error C202: 'x_l': undefined identifier
+GLCD.C(213): error C202: 'y': undefined identifier
+GLCD.C(214): error C202: 'y': undefined identifier
+GLCD.C(215): error C202: 'x_l': undefined identifier
+GLCD.C(216): error C202: 'x_l': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+GLCD.H(62): error C141: syntax error near 'char', expected ')'
+GLCD_TEST.C(4): error C132: 'draw': not in formal parameter list
+GLCD_TEST.C(4): error C141: syntax error near '{'
+GLCD_TEST.C(5): error C132: 'draw_line': not in formal parameter list
+GLCD_TEST.C(6): error C141: syntax error near '}'
+compiling glcd.c...
+GLCD.H(62): error C141: syntax error near 'char', expected ')'
+GLCD.C(5): error C132: 'waiting': not in formal parameter list
+GLCD.C(5): error C141: syntax error near '{'
+GLCD.C(7): error C244: 'RS': can't initialize, bad type or class
+GLCD.C(7): error C132: 'RS': not in formal parameter list
+GLCD.C(8): error C244: 'RW': can't initialize, bad type or class
+GLCD.C(8): error C132: 'RW': not in formal parameter list
+GLCD.C(9): error C244: 'En': can't initialize, bad type or class
+GLCD.C(9): error C132: 'En': not in formal parameter list
+GLCD.C(10): error C244: 'P0': can't initialize, bad type or class
+GLCD.C(10): error C132: 'P0': not in formal parameter list
+GLCD.C(11): error C244: 'En': can't initialize, bad type or class
+GLCD.C(11): error C132: 'En': not in formal parameter list
+GLCD.C(12): error C141: syntax error near 'if'
+GLCD.C(12): error C141: syntax error near '&', expected ')'
+GLCD.C(201): error C141: syntax error near 'char', expected ')'
+GLCD.C(208): error C202: 'fill': undefined identifier
+GLCD.C(209): error C202: 'y': undefined identifier
+GLCD.C(210): error C202: 'x_l': undefined identifier
+GLCD.C(213): error C202: 'y': undefined identifier
+GLCD.C(214): error C202: 'y': undefined identifier
+GLCD.C(215): error C202: 'x_l': undefined identifier
+GLCD.C(216): error C202: 'x_l': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+GLCD_TEST.C(4): error C132: 'draw': not in formal parameter list
+GLCD_TEST.C(4): error C141: syntax error near '{'
+GLCD_TEST.C(5): error C132: 'draw_line': not in formal parameter list
+GLCD_TEST.C(6): error C141: syntax error near '}'
+compiling glcd.c...
+GLCD.C(5): error C132: 'waiting': not in formal parameter list
+GLCD.C(5): error C141: syntax error near '{'
+GLCD.C(7): error C244: 'RS': can't initialize, bad type or class
+GLCD.C(7): error C132: 'RS': not in formal parameter list
+GLCD.C(8): error C244: 'RW': can't initialize, bad type or class
+GLCD.C(8): error C132: 'RW': not in formal parameter list
+GLCD.C(9): error C244: 'En': can't initialize, bad type or class
+GLCD.C(9): error C132: 'En': not in formal parameter list
+GLCD.C(10): error C244: 'P0': can't initialize, bad type or class
+GLCD.C(10): error C132: 'P0': not in formal parameter list
+GLCD.C(11): error C244: 'En': can't initialize, bad type or class
+GLCD.C(11): error C132: 'En': not in formal parameter list
+GLCD.C(12): error C141: syntax error near 'if'
+GLCD.C(12): error C141: syntax error near '&', expected ')'
+GLCD.C(201): error C141: syntax error near 'char', expected ')'
+GLCD.C(208): error C202: 'fill': undefined identifier
+GLCD.C(209): error C202: 'y': undefined identifier
+GLCD.C(210): error C202: 'x_l': undefined identifier
+GLCD.C(213): error C202: 'y': undefined identifier
+GLCD.C(214): error C202: 'y': undefined identifier
+GLCD.C(215): error C202: 'x_l': undefined identifier
+GLCD.C(216): error C202: 'x_l': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+GLCD_TEST.C(4): error C132: 'draw': not in formal parameter list
+GLCD_TEST.C(4): error C141: syntax error near '{'
+GLCD_TEST.C(5): error C132: 'draw_line': not in formal parameter list
+GLCD_TEST.C(6): error C141: syntax error near '}'
+compiling glcd.c...
+GLCD.C(5): error C132: 'waiting': not in formal parameter list
+GLCD.C(5): error C141: syntax error near '{'
+GLCD.C(7): error C244: 'RS': can't initialize, bad type or class
+GLCD.C(7): error C132: 'RS': not in formal parameter list
+GLCD.C(8): error C244: 'RW': can't initialize, bad type or class
+GLCD.C(8): error C132: 'RW': not in formal parameter list
+GLCD.C(9): error C244: 'En': can't initialize, bad type or class
+GLCD.C(9): error C132: 'En': not in formal parameter list
+GLCD.C(10): error C244: 'P0': can't initialize, bad type or class
+GLCD.C(10): error C132: 'P0': not in formal parameter list
+GLCD.C(11): error C244: 'En': can't initialize, bad type or class
+GLCD.C(11): error C132: 'En': not in formal parameter list
+GLCD.C(12): error C141: syntax error near 'if'
+GLCD.C(12): error C141: syntax error near '&', expected ')'
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BOX?GLCD
+Program Size: data=28.3 xdata=0 code=818
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=836
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=836
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(208): error C141: syntax error near 'unsigned'
+GLCD.C(208): error C202: 'i': undefined identifier
+GLCD.C(208): error C202: 'i': undefined identifier
+GLCD.C(208): error C202: 'i': undefined identifier
+GLCD.C(208): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=836
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=837
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=837
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=837
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(221): warning C209: '_draw_box': too few actual parameters
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=824
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.3 xdata=0 code=826
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).

@@ -59,6 +59,8 @@ extern void display_string(unsigned char line,unsigned char *string);//display s
 extern void first_page(void);//clear CGRAM
 extern void set_dot(unsigned char x,unsigned char y);//draw a pixel
 extern void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2);//draw a line
+extern void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char num_y,bit fill);//draw a box
+extern void draw_frame(void);//draw the frame
 
 #endif
  

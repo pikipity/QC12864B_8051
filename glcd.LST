@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 00:01:31 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -8,78 +8,140 @@ COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE glcd.c BROWSE DEBUG OBJECTEXTEND
 line level    source
 
    1          #include <reg52.h>
-   2          #include "glcd.h"
-   3          
-   4          void waiting(void){
-   5   1              while(1){
-   6   2                      RS=0;
-   7   2                      RW=1;
-   8   2                      En=0;
-   9   2                      LCDdata=0xFF;
-  10   2                      En=1;
-  11   2                      if((LCDdata&busy)==0) break;
-  12   2              }
-  13   1      }
-  14          
-  15          void lcd_write_command(unsigned char command){
-  16   1              waiting();
-  17   1              RS=0;
-  18   1              RW=0;
-  19   1              En=1;
-  20   1              LCDdata=command;
-  21   1              En=0;
-  22   1      }
-  23          
-  24          void lcd_write_data(unsigned char RWdata){
-  25   1              waiting();
-  26   1              RS=1;
-  27   1              RW=0;
-  28   1              En=1;
-  29   1              LCDdata=RWdata;
-  30   1              En=0;
-  31   1      }
-  32          
-  33          void lcd_init(void){
-  34   1              RET=1;
-  35   1              lcd_write_command(0x30);
-  36   1              lcd_write_command(0x30);
-  37   1              lcd_write_command(0x0C);
-  38   1              lcd_write_command(0x01);
-  39   1              lcd_write_command(0x06);
-  40   1      }
-  41          
-  42          void Display_String(unsigned char line,unsigned char *string){
-  43   1      //It can display chinese
-  44   1      //line is the number of line. There are total 4 lines
-  45   1      //string must be like this: unsigned char code string_1[]={"Test"}
-  46   1          unsigned char addr,i;
-  47   1          if(line==1)
-  48   1            addr=0x80;
-  49   1          else if(line==2)
-  50   1            addr=0x90;
-  51   1          else if(line==3)
-  52   1            addr=0x88;
-  53   1          else if(line==4)
-  54   1                      addr=0x98;
-  55   1          lcd_write_command(addr);
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 00:01:31 PAGE 2   
+   2          #include <string.h>
+   3          #include "glcd.h"
+   4          
+   5          void waiting(void){
+   6   1              while(1){
+   7   2                      RS=0;
+   8   2                      RW=1;
+   9   2                      En=0;
+  10   2                      LCDdata=0xFF;
+  11   2                      En=1;
+  12   2                      if((LCDdata&0x80)==0) break;
+  13   2              }
+  14   1      }
+  15          
+  16          void lcd_write_command(unsigned char command){
+  17   1              waiting();
+  18   1              RS=0;
+  19   1              RW=0;
+  20   1              En=1;
+  21   1              LCDdata=command;
+  22   1              En=0;
+  23   1      }
+  24          
+  25          void lcd_write_data(unsigned char RWdata){
+  26   1              waiting();
+  27   1              RS=1;
+  28   1              RW=0;
+  29   1              En=1;
+  30   1              LCDdata=RWdata;
+  31   1              En=0;
+  32   1      }
+  33          
+  34          unsigned char lcd_read_data(void){
+  35   1              unsigned char Rdata;
+  36   1              waiting();
+  37   1              RS=1;
+  38   1              RW=1;
+  39   1              En=1;
+  40   1              Rdata=P0;
+  41   1              En=0;
+  42   1              return Rdata;
+  43   1      }
+  44          
+  45          void lcd_init(void){
+  46   1              PSB=1;
+  47   1              RET=1;
+  48   1              lcd_write_command(BasicCommand);
+  49   1              lcd_write_command(ClearScreen);
+  50   1              lcd_write_command(AddrBackO);
+  51   1              lcd_write_command(CurserOff);
+  52   1              lcd_write_command(ClearScreen);
+  53   1              lcd_write_command(CurserLeft);
+  54   1      }
+  55          
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 2   
 
-  56   1          for(i=0;i<16;i++)
-  57   1          {
-  58   2                      lcd_write_data(*string++);
-  59   2              } 
-  60   1      }
+  56          void display_string(unsigned char line,unsigned char *string){
+  57   1      //Use the default command to display string. It can display chinese
+  58   1      //line is the number of line. There are total 4 lines
+  59   1      //string must be like this: unsigned char code string_1[]={"Test"}
+  60   1      //Maxmum number of characters is 16.
+  61   1          unsigned char  addr,i;
+  62   1              unsigned char  maxnum=strlen(string);
+  63   1          if(line==1)
+  64   1            addr=0x80;
+  65   1          else if(line==2)
+  66   1            addr=0x90;
+  67   1          else if(line==3)
+  68   1            addr=0x88;
+  69   1          else if(line==4)
+  70   1                      addr=0x98;
+  71   1          lcd_write_command(addr);
+  72   1          for(i=0;i<maxnum;i++)
+  73   1          {
+  74   2                      lcd_write_data(*string++);
+  75   2              } 
+  76   1      }
+  77          
+  78          void first_page(void){
+  79   1              unsigned char i,j;
+  80   1              lcd_write_command(ExteCommandOff);
+  81   1              for(i=0;i<16;i++){
+  82   2                      for(j=0;j<32;j++){
+  83   3                              lcd_write_command(0x80|j);
+  84   3                              lcd_write_command(i|0x80);
+  85   3                              lcd_write_data(0x00);
+  86   3                              lcd_write_data(0x00);   
+  87   3                      }
+  88   2              }
+  89   1              lcd_write_command(ExteCommandOn);
+  90   1              lcd_write_command(BasicCommand);
+  91   1      }
+  92          
+  93          void set_dot(unsigned char x,unsigned char y){
+  94   1              unsigned int k=0x8000;
+  95   1              unsigned char m,n;
+  96   1              lcd_write_command(ExteCommandOn);
+  97   1              if(y>32){
+  98   2                      y=y-32;
+  99   2                      x=x+128;
+ 100   2              }
+ 101   1              k=k>>x%16;
+ 102   1              lcd_write_command((x/16)|0x80);
+ 103   1              lcd_write_command(0x80|y);
+ 104   1              m=lcd_read_data();
+ 105   1              m=lcd_read_data()|k>>8;
+ 106   1              n=lcd_read_data()|k;
+ 107   1              lcd_write_command(0x80|y);
+ 108   1              lcd_write_command((x/16)|0x80);
+ 109   1              lcd_write_data(m);
+ 110   1              lcd_write_data(n);
+ 111   1              lcd_write_command(BasicCommand);
+ 112   1      }
+ 113          
+ 114          void drawline(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){
+ 115   1              
+ 116   1      }
+*** WARNING C280 IN LINE 114 OF GLCD.C: 'x1': unreferenced local variable
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 3   
+
+*** WARNING C280 IN LINE 114 OF GLCD.C: 'y1': unreferenced local variable
+*** WARNING C280 IN LINE 114 OF GLCD.C: 'x2': unreferenced local variable
+*** WARNING C280 IN LINE 114 OF GLCD.C: 'y2': unreferenced local variable
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    135    ----
+   CODE SIZE        =    350    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----       3
+   DATA SIZE        =   ----      11
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
 
 
-C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
+C51 COMPILATION COMPLETE.  4 WARNING(S),  0 ERROR(S)

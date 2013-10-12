@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -126,7 +126,7 @@ line level    source
  115   1              lcd_write_command((x/16)|0x80);
  116   1              //write data
  117   1              lcd_write_data(highdata);
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 3   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 3   
 
  118   1              lcd_write_data(lowdata);
  119   1              //go back to basic command
@@ -134,36 +134,94 @@ line level    source
  121   1      }
  122          
  123          void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){    
- 124   1              char dx,dy;
- 125   1              unsigned char x,y;
- 126   1              int e;
- 127   1              dx=x2-x1;
- 128   1              dy=y2-y1;
- 129   1              e=-dx;
- 130   1              x=x1;
- 131   1              y=y1;
- 132   1              while(x<=x2 && y<=y2){
- 133   2                      set_dot(x,y);
- 134   2                      e=e+2*dy;
- 135   2                      if(e<=0){
- 136   3                              x+=1;
- 137   3                      }else{
- 138   3                              x+=1;
- 139   3                              y+=1;
- 140   3                              e=e-2*dx;
- 141   3                      }
- 142   2              }
- 143   1      }
+ 124   1              char dx,dy;//Difference between x1 and x2 and difference between y1 and y2
+ 125   1              unsigned char x,y,temp;//x,y: location of pixel.  temp: temp value for exchange of x and y
+ 126   1              int e;//adjust whether should be increased
+ 127   1              bit k,j;//k: upper slope flag.  j: negative slope flag
+ 128   1              dx=x2-x1;
+ 129   1              dy=y2-y1;
+ 130   1              //if the line is not from high to low, change it.
+ 131   1              if((dx<=0 && dy<=0) || (dx>=0 && dy<=0)){
+ 132   2                      temp=x2;
+ 133   2                      x2=x1;
+ 134   2                      x1=temp;
+ 135   2                      temp=y2;
+ 136   2                      y2=y1;
+ 137   2                      y1=temp;
+ 138   2                      dx=x2-x1;
+ 139   2                      dy=y2-y1;
+ 140   2              }
+ 141   1              //if negative slope, change to positive and get flag
+ 142   1              if(dx<0){
+ 143   2                      temp=x2;
+ 144   2                      x2=x1;
+ 145   2                      x1=temp;
+ 146   2                      dx=x2-x1;
+ 147   2                      j=1;
+ 148   2              }else{
+ 149   2                      j=0;
+ 150   2              }
+ 151   1              //if upper slope, get flag
+ 152   1              if(dx>=dy){
+ 153   2                      k=1;    
+ 154   2              }else{
+ 155   2                      k=0;
+ 156   2              }
+ 157   1              //Different slope, different default e
+ 158   1              if(k){
+ 159   2                      e=-dx;
+ 160   2              }else{
+ 161   2                      e=-dy;
+ 162   2              }
+ 163   1              //first point
+ 164   1              x=x1;
+ 165   1              y=y1;
+ 166   1              //if has been finished final point, finish drawing.
+ 167   1              while(x<=x2 && y<=y2){
+ 168   2                      //if the original slope is negative slope, should  change points back
+ 169   2                      if(j){
+ 170   3                              set_dot(x1+x2-x,y);
+ 171   3                      }else{
+ 172   3                              set_dot(x,y);
+ 173   3                      }
+ 174   2                      //different slope, different change of e
+ 175   2                      if(k){
+ 176   3                              e=e+2*dy;
+ 177   3                      }else{
+ 178   3                              e=e+2*dx;
+ 179   3                      }
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 21:59:18 PAGE 4   
+
+ 180   2                      //according to e, adjust whether should go upper
+ 181   2                      if(e<=0){
+ 182   3                              //different slope, different way to go upper
+ 183   3                              if(k){
+ 184   4                                      x+=1;
+ 185   4                              }else{
+ 186   4                                      y+=1;
+ 187   4                              }
+ 188   3                      }else{
+ 189   3                              x+=1;
+ 190   3                              y+=1;
+ 191   3                              //different slope, different change of e
+ 192   3                              if(k){
+ 193   4                                      e=e-2*dx;
+ 194   4                              }else{
+ 195   4                                      e=e-2*dy;
+ 196   4                              }
+ 197   3                      }
+ 198   2              }
+ 199   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    459    ----
+   CODE SIZE        =    614    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----      13
+   DATA SIZE        =   ----      14
    IDATA SIZE       =   ----    ----
-   BIT SIZE         =   ----    ----
+   BIT SIZE         =   ----       2
 END OF MODULE INFORMATION.
 
 

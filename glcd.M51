@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.00                                                        10/12/2013  18:02:49  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.00                                                        10/12/2013  21:59:18  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.00, INVOKED BY:
@@ -24,72 +24,74 @@ LINK MAP OF MODULE:  glcd (GLCD_TEST)
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     0008H     UNIT         _DATA_GROUP_
-            DATA    0010H     0005H     UNIT         ?DT?_DISPLAY_STRING?GLCD
-            IDATA   0015H     0001H     UNIT         ?STACK
+            DATA    0008H     0009H     UNIT         _DATA_GROUP_
+            DATA    0011H     0005H     UNIT         ?DT?_DISPLAY_STRING?GLCD
+                    0016H     000AH                  *** GAP ***
+            BIT     0020H.0   0000H.2   UNIT         _BIT_GROUP_
+                    0020H.2   0000H.6                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     007BH     UNIT         ?PR?_DRAW_LINE?GLCD
-            CODE    007EH     005DH     UNIT         ?PR?_SET_DOT?GLCD
-            CODE    00DBH     0058H     UNIT         ?PR?_DISPLAY_STRING?GLCD
-            CODE    0133H     0031H     UNIT         ?PR?FIRST_PAGE?GLCD
-            CODE    0164H     0021H     UNIT         ?PR?LCD_INIT?GLCD
-            CODE    0185H     001CH     UNIT         ?PR?_LCD_WRITE_COMMAND?GLCD
-            CODE    01A1H     0019H     UNIT         ?C?LIB_CODE
-            CODE    01BAH     0015H     UNIT         ?PR?_STRLEN?STRLEN
-            CODE    01CFH     0012H     UNIT         ?PR?DRAW?GLCD_TEST
-            CODE    01E1H     0011H     UNIT         ?PR?WAITING?GLCD
-            CODE    01F2H     000EH     UNIT         ?PR?_LCD_WRITE_DATA?GLCD
-            CODE    0200H     000EH     UNIT         ?PR?LCD_READ_DATA?GLCD
-            CODE    020EH     000CH     UNIT         ?C_C51STARTUP
-            CODE    021AH     000BH     UNIT         ?PR?MAIN?GLCD_TEST
+            CODE    0003H     0116H     UNIT         ?PR?_DRAW_LINE?GLCD
+            CODE    0119H     005DH     UNIT         ?PR?_SET_DOT?GLCD
+            CODE    0176H     0058H     UNIT         ?PR?_DISPLAY_STRING?GLCD
+            CODE    01CEH     0042H     UNIT         ?PR?DRAW?GLCD_TEST
+            CODE    0210H     0031H     UNIT         ?PR?FIRST_PAGE?GLCD
+            CODE    0241H     0021H     UNIT         ?PR?LCD_INIT?GLCD
+            CODE    0262H     001CH     UNIT         ?PR?_LCD_WRITE_COMMAND?GLCD
+            CODE    027EH     0019H     UNIT         ?C?LIB_CODE
+            CODE    0297H     0015H     UNIT         ?PR?_STRLEN?STRLEN
+            CODE    02ACH     0011H     UNIT         ?PR?WAITING?GLCD
+            CODE    02BDH     000EH     UNIT         ?PR?_LCD_WRITE_DATA?GLCD
+            CODE    02CBH     000EH     UNIT         ?PR?LCD_READ_DATA?GLCD
+            CODE    02D9H     000CH     UNIT         ?C_C51STARTUP
+            CODE    02E5H     000BH     UNIT         ?PR?MAIN?GLCD_TEST
 
 
 
 OVERLAY MAP OF MODULE:   glcd (GLCD_TEST)
 
 
-SEGMENT                               DATA_GROUP 
-  +--> CALLED SEGMENT               START    LENGTH
----------------------------------------------------
-?C_C51STARTUP                       -----    -----
+SEGMENT                                BIT_GROUP          DATA_GROUP 
+  +--> CALLED SEGMENT               START    LENGTH     START    LENGTH
+-----------------------------------------------------------------------
+?C_C51STARTUP                       -----    -----      -----    -----
   +--> ?PR?MAIN?GLCD_TEST
 
-?PR?MAIN?GLCD_TEST                  -----    -----
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 2
+
+
+?PR?MAIN?GLCD_TEST                  -----    -----      -----    -----
   +--> ?PR?LCD_INIT?GLCD
   +--> ?PR?FIRST_PAGE?GLCD
-BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  18:02:49  PAGE 2
-
-
   +--> ?PR?DRAW?GLCD_TEST
 
-?PR?LCD_INIT?GLCD                   -----    -----
+?PR?LCD_INIT?GLCD                   -----    -----      -----    -----
   +--> ?PR?_LCD_WRITE_COMMAND?GLCD
 
-?PR?_LCD_WRITE_COMMAND?GLCD         -----    -----
+?PR?_LCD_WRITE_COMMAND?GLCD         -----    -----      -----    -----
   +--> ?PR?WAITING?GLCD
 
-?PR?FIRST_PAGE?GLCD                 -----    -----
+?PR?FIRST_PAGE?GLCD                 -----    -----      -----    -----
   +--> ?PR?_LCD_WRITE_COMMAND?GLCD
   +--> ?PR?_LCD_WRITE_DATA?GLCD
 
-?PR?_LCD_WRITE_DATA?GLCD            -----    -----
+?PR?_LCD_WRITE_DATA?GLCD            -----    -----      -----    -----
   +--> ?PR?WAITING?GLCD
 
-?PR?DRAW?GLCD_TEST                  -----    -----
+?PR?DRAW?GLCD_TEST                  -----    -----      -----    -----
   +--> ?PR?_DRAW_LINE?GLCD
+
+?PR?_DRAW_LINE?GLCD                 0020H.0  0000H.2    0008H    0007H
   +--> ?PR?_SET_DOT?GLCD
 
-?PR?_DRAW_LINE?GLCD                 0008H    0006H
-  +--> ?PR?_SET_DOT?GLCD
-
-?PR?_SET_DOT?GLCD                   000EH    0002H
+?PR?_SET_DOT?GLCD                   -----    -----      000FH    0002H
   +--> ?PR?_LCD_WRITE_COMMAND?GLCD
   +--> ?PR?LCD_READ_DATA?GLCD
   +--> ?PR?_LCD_WRITE_DATA?GLCD
 
-?PR?LCD_READ_DATA?GLCD              -----    -----
+?PR?LCD_READ_DATA?GLCD              -----    -----      -----    -----
   +--> ?PR?WAITING?GLCD
 
 
@@ -106,26 +108,30 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
-  C:021AH         PUBLIC        main
-  C:01CFH         PUBLIC        draw
+  C:02E5H         PUBLIC        main
+  C:01CEH         PUBLIC        draw
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          DRAW
-  C:01CFH         LINE#         4
-  C:01CFH         LINE#         5
-  C:01DAH         LINE#         6
+  C:01CEH         LINE#         4
+  C:01CEH         LINE#         5
+  C:01D9H         LINE#         6
+  C:01E3H         LINE#         7
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 3
+
+
+  C:01EDH         LINE#         8
+  C:01F9H         LINE#         9
+  C:0205H         LINE#         10
   -------         ENDPROC       DRAW
   -------         PROC          MAIN
-  C:021AH         LINE#         9
-BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  18:02:49  PAGE 3
-
-
-  C:021AH         LINE#         10
-  C:021DH         LINE#         11
-  C:0220H         LINE#         12
-  C:0223H         LINE#         13
+  C:02E5H         LINE#         13
+  C:02E5H         LINE#         14
+  C:02E8H         LINE#         15
+  C:02EBH         LINE#         16
+  C:02EEH         LINE#         17
   -------         ENDPROC       MAIN
   -------         ENDMOD        GLCD_TEST
 
@@ -138,206 +144,256 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   C:0003H         PUBLIC        _draw_line
-  C:01F2H         PUBLIC        _lcd_write_data
+  C:02BDH         PUBLIC        _lcd_write_data
   B:00A0H.5       PUBLIC        RS
   B:00A0H.6       PUBLIC        RW
-  C:0133H         PUBLIC        first_page
-  C:0200H         PUBLIC        lcd_read_data
+  C:0210H         PUBLIC        first_page
+  C:02CBH         PUBLIC        lcd_read_data
   B:00A0H.7       PUBLIC        En
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:0164H         PUBLIC        lcd_init
-  C:007EH         PUBLIC        _set_dot
-  C:00DBH         PUBLIC        _display_string
+  C:0241H         PUBLIC        lcd_init
+  C:0119H         PUBLIC        _set_dot
+  C:0176H         PUBLIC        _display_string
   B:00A0H.3       PUBLIC        PSB
-  C:0193H         PUBLIC        _lcd_write_command
+  C:0270H         PUBLIC        _lcd_write_command
   D:00C8H         PUBLIC        T2CON
   B:00A0H.4       PUBLIC        RET
-  C:01E1H         PUBLIC        waiting
+  C:02ACH         PUBLIC        waiting
   D:00D0H         PUBLIC        PSW
   -------         PROC          WAITING
-  C:01E1H         LINE#         5
-  C:01E1H         LINE#         6
-  C:01E1H         LINE#         7
-  C:01E3H         LINE#         8
-  C:01E5H         LINE#         9
-  C:01E7H         LINE#         10
-  C:01EAH         LINE#         11
-  C:01ECH         LINE#         12
-  C:01F1H         LINE#         13
-  C:01F1H         LINE#         14
+  C:02ACH         LINE#         5
+  C:02ACH         LINE#         6
+  C:02ACH         LINE#         7
+  C:02AEH         LINE#         8
+  C:02B0H         LINE#         9
+  C:02B2H         LINE#         10
+  C:02B5H         LINE#         11
+  C:02B7H         LINE#         12
+  C:02BCH         LINE#         13
+  C:02BCH         LINE#         14
   -------         ENDPROC       WAITING
-  -------         PROC          L?0037
-  -------         ENDPROC       L?0037
+  -------         PROC          L?0058
+  -------         ENDPROC       L?0058
   -------         PROC          _LCD_WRITE_COMMAND
   D:0007H         SYMBOL        command
-  C:0193H         LINE#         16
-  C:0193H         LINE#         17
-  C:0196H         LINE#         18
-  C:0198H         LINE#         19
-  C:019AH         LINE#         20
-  C:019CH         LINE#         21
-  C:019EH         LINE#         22
-  C:01A0H         LINE#         23
-BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  18:02:49  PAGE 4
+  C:0270H         LINE#         16
+  C:0270H         LINE#         17
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 4
 
 
+  C:0273H         LINE#         18
+  C:0275H         LINE#         19
+  C:0277H         LINE#         20
+  C:0279H         LINE#         21
+  C:027BH         LINE#         22
+  C:027DH         LINE#         23
   -------         ENDPROC       _LCD_WRITE_COMMAND
   -------         PROC          _LCD_WRITE_DATA
   D:0007H         SYMBOL        RWdata
-  C:01F2H         LINE#         25
-  C:01F2H         LINE#         26
-  C:01F5H         LINE#         27
-  C:01F7H         LINE#         28
-  C:01F9H         LINE#         29
-  C:01FBH         LINE#         30
-  C:01FDH         LINE#         31
-  C:01FFH         LINE#         32
+  C:02BDH         LINE#         25
+  C:02BDH         LINE#         26
+  C:02C0H         LINE#         27
+  C:02C2H         LINE#         28
+  C:02C4H         LINE#         29
+  C:02C6H         LINE#         30
+  C:02C8H         LINE#         31
+  C:02CAH         LINE#         32
   -------         ENDPROC       _LCD_WRITE_DATA
   -------         PROC          LCD_READ_DATA
   -------         DO            
   D:0007H         SYMBOL        Rdata
   -------         ENDDO         
-  C:0200H         LINE#         34
-  C:0200H         LINE#         36
-  C:0203H         LINE#         37
-  C:0205H         LINE#         38
-  C:0207H         LINE#         39
-  C:0209H         LINE#         40
-  C:020BH         LINE#         41
-  C:020DH         LINE#         42
-  C:020DH         LINE#         43
+  C:02CBH         LINE#         34
+  C:02CBH         LINE#         36
+  C:02CEH         LINE#         37
+  C:02D0H         LINE#         38
+  C:02D2H         LINE#         39
+  C:02D4H         LINE#         40
+  C:02D6H         LINE#         41
+  C:02D8H         LINE#         42
+  C:02D8H         LINE#         43
   -------         ENDPROC       LCD_READ_DATA
   -------         PROC          LCD_INIT
-  C:0164H         LINE#         45
-  C:0164H         LINE#         46
-  C:0166H         LINE#         47
-  C:0168H         LINE#         48
-  C:016DH         LINE#         49
-  C:0172H         LINE#         50
-  C:0176H         LINE#         51
-  C:017BH         LINE#         52
-  C:0180H         LINE#         53
+  C:0241H         LINE#         45
+  C:0241H         LINE#         46
+  C:0243H         LINE#         47
+  C:0245H         LINE#         48
+  C:024AH         LINE#         49
+  C:024FH         LINE#         50
+  C:0253H         LINE#         51
+  C:0258H         LINE#         52
+  C:025DH         LINE#         53
   -------         ENDPROC       LCD_INIT
   -------         PROC          _DISPLAY_STRING
-  D:0010H         SYMBOL        line
-  D:0011H         SYMBOL        string
+  D:0011H         SYMBOL        line
+  D:0012H         SYMBOL        string
   -------         DO            
-  D:0014H         SYMBOL        addr
+  D:0015H         SYMBOL        addr
   D:0005H         SYMBOL        i
   D:0006H         SYMBOL        maxnum
   -------         ENDDO         
-  C:00DBH         LINE#         56
-  C:00E3H         LINE#         62
-  C:00E8H         LINE#         63
-  C:00EDH         LINE#         64
-  C:00F2H         LINE#         65
-  C:00F7H         LINE#         66
-  C:00FCH         LINE#         67
-  C:0101H         LINE#         68
-  C:0106H         LINE#         69
-  C:010BH         LINE#         70
-  C:010EH         LINE#         71
-  C:0113H         LINE#         72
-BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  18:02:49  PAGE 5
+  C:0176H         LINE#         56
+  C:017EH         LINE#         62
+  C:0183H         LINE#         63
+  C:0188H         LINE#         64
+  C:018DH         LINE#         65
+  C:0192H         LINE#         66
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 5
 
 
-  C:011AH         LINE#         73
-  C:011AH         LINE#         74
-  C:012FH         LINE#         75
-  C:0132H         LINE#         76
+  C:0197H         LINE#         67
+  C:019CH         LINE#         68
+  C:01A1H         LINE#         69
+  C:01A6H         LINE#         70
+  C:01A9H         LINE#         71
+  C:01AEH         LINE#         72
+  C:01B5H         LINE#         73
+  C:01B5H         LINE#         74
+  C:01CAH         LINE#         75
+  C:01CDH         LINE#         76
   -------         ENDPROC       _DISPLAY_STRING
   -------         PROC          FIRST_PAGE
   -------         DO            
   D:0006H         SYMBOL        i
   D:0005H         SYMBOL        j
   -------         ENDDO         
-  C:0133H         LINE#         78
-  C:0133H         LINE#         80
-  C:0138H         LINE#         81
-  C:013AH         LINE#         82
-  C:013CH         LINE#         83
-  C:0143H         LINE#         84
-  C:014AH         LINE#         85
-  C:014FH         LINE#         86
-  C:0152H         LINE#         87
-  C:0156H         LINE#         88
-  C:015AH         LINE#         89
-  C:015FH         LINE#         90
+  C:0210H         LINE#         78
+  C:0210H         LINE#         80
+  C:0215H         LINE#         81
+  C:0217H         LINE#         82
+  C:0219H         LINE#         83
+  C:0220H         LINE#         84
+  C:0227H         LINE#         85
+  C:022CH         LINE#         86
+  C:022FH         LINE#         87
+  C:0233H         LINE#         88
+  C:0237H         LINE#         89
+  C:023CH         LINE#         90
   -------         ENDPROC       FIRST_PAGE
   -------         PROC          _SET_DOT
   D:0004H         SYMBOL        x
   D:0005H         SYMBOL        y
   -------         DO            
-  D:000EH         SYMBOL        k
+  D:000FH         SYMBOL        k
   D:0006H         SYMBOL        highdata
   D:0003H         SYMBOL        lowdata
   -------         ENDDO         
-  C:007EH         LINE#         93
-  C:0080H         LINE#         95
-  C:0086H         LINE#         98
-  C:008BH         LINE#         100
-  C:0091H         LINE#         101
-  C:0095H         LINE#         102
-  C:0099H         LINE#         103
-  C:0099H         LINE#         105
-  C:00B1H         LINE#         107
-  C:00B1H         LINE#         108
-  C:00B4H         LINE#         110
-  C:00B9H         LINE#         111
-  C:00C2H         LINE#         112
-  C:00C9H         LINE#         114
-  C:00C9H         LINE#         115
-  C:00CCH         LINE#         117
-  C:00D1H         LINE#         118
-  C:00D6H         LINE#         120
+  C:0119H         LINE#         93
+  C:011BH         LINE#         95
+  C:0121H         LINE#         98
+  C:0126H         LINE#         100
+  C:012CH         LINE#         101
+  C:0130H         LINE#         102
+  C:0134H         LINE#         103
+  C:0134H         LINE#         105
+  C:014CH         LINE#         107
+  C:014CH         LINE#         108
+  C:014FH         LINE#         110
+  C:0154H         LINE#         111
+  C:015DH         LINE#         112
+  C:0164H         LINE#         114
+  C:0164H         LINE#         115
+  C:0167H         LINE#         117
+  C:016CH         LINE#         118
+  C:0171H         LINE#         120
   -------         ENDPROC       _SET_DOT
   -------         PROC          _DRAW_LINE
-  D:0007H         SYMBOL        x1
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 6
+
+
+  D:0008H         SYMBOL        x1
   D:0005H         SYMBOL        y1
   D:000AH         SYMBOL        x2
   D:000BH         SYMBOL        y2
   -------         DO            
   D:000CH         SYMBOL        dx
-BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  18:02:49  PAGE 6
-
-
   D:000DH         SYMBOL        dy
   D:0002H         SYMBOL        x
   D:0001H         SYMBOL        y
+  D:000EH         SYMBOL        temp
   D:0082H         SYMBOL        e
+  B:0020H.0       SYMBOL        k
+  B:0020H.1       SYMBOL        j
   -------         ENDDO         
   C:0003H         LINE#         123
-  C:0005H         LINE#         127
-  C:000BH         LINE#         128
-  C:0011H         LINE#         129
-  C:0022H         LINE#         130
-  C:0024H         LINE#         131
-  C:0026H         LINE#         132
-  C:0031H         LINE#         133
-  C:0038H         LINE#         134
-  C:0050H         LINE#         135
-  C:005DH         LINE#         136
-  C:005EH         LINE#         137
-  C:0060H         LINE#         138
-  C:0061H         LINE#         139
-  C:0062H         LINE#         140
-  C:007BH         LINE#         141
-  C:007BH         LINE#         142
-  C:007DH         LINE#         143
+  C:0007H         LINE#         128
+  C:000EH         LINE#         129
+  C:0014H         LINE#         131
+  C:0037H         LINE#         132
+  C:003AH         LINE#         133
+  C:003DH         LINE#         134
+  C:0040H         LINE#         135
+  C:0043H         LINE#         136
+  C:0045H         LINE#         137
+  C:0047H         LINE#         138
+  C:004EH         LINE#         139
+  C:0054H         LINE#         140
+  C:0054H         LINE#         142
+  C:005DH         LINE#         143
+  C:0060H         LINE#         144
+  C:0063H         LINE#         145
+  C:0066H         LINE#         146
+  C:006DH         LINE#         147
+  C:006FH         LINE#         148
+  C:0071H         LINE#         149
+  C:0073H         LINE#         150
+  C:0073H         LINE#         152
+  C:0080H         LINE#         153
+  C:0082H         LINE#         154
+  C:0084H         LINE#         155
+  C:0086H         LINE#         156
+  C:0086H         LINE#         158
+  C:0089H         LINE#         159
+  C:008BH         LINE#         160
+  C:008DH         LINE#         161
+  C:009DH         LINE#         162
+  C:009DH         LINE#         164
+  C:009FH         LINE#         165
+  C:00A1H         LINE#         167
+  C:00ACH         LINE#         169
+  C:00AFH         LINE#         170
+  C:00B6H         LINE#         171
+  C:00B8H         LINE#         172
+  C:00BFH         LINE#         173
+  C:00BFH         LINE#         175
+  C:00C2H         LINE#         176
+  C:00C4H         LINE#         177
+BL51 BANKED LINKER/LOCATER V6.00                                                      10/12/2013  21:59:18  PAGE 7
+
+
+  C:00C6H         LINE#         178
+  C:00DEH         LINE#         179
+  C:00DEH         LINE#         181
+  C:00EBH         LINE#         183
+  C:00EEH         LINE#         184
+  C:00EFH         LINE#         185
+  C:00F1H         LINE#         186
+  C:00F2H         LINE#         187
+  C:00F2H         LINE#         188
+  C:00F4H         LINE#         189
+  C:00F5H         LINE#         190
+  C:00F6H         LINE#         192
+  C:00F9H         LINE#         193
+  C:00FBH         LINE#         194
+  C:00FDH         LINE#         195
+  C:0116H         LINE#         196
+  C:0116H         LINE#         197
+  C:0116H         LINE#         198
+  C:0118H         LINE#         199
   -------         ENDPROC       _DRAW_LINE
   -------         ENDMOD        GLCD
 
   -------         MODULE        ?C?CLDPTR
-  C:01A1H         PUBLIC        ?C?CLDPTR
+  C:027EH         PUBLIC        ?C?CLDPTR
   -------         ENDMOD        ?C?CLDPTR
 
   -------         MODULE        STRLEN
-  C:01BAH         PUBLIC        _STRLEN
+  C:0297H         PUBLIC        _STRLEN
   -------         ENDMOD        STRLEN
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DISPLAY_STRING?GLCD
 
-Program Size: data=22.0 xdata=0 code=549
+Program Size: data=23.2 xdata=0 code=752
 LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

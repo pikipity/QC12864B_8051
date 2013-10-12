@@ -121,23 +121,79 @@ void set_dot(unsigned char x,unsigned char y){
 }
 
 void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){	
-	char dx,dy;
-	unsigned char x,y;
-	int e;
+	char dx,dy;//Difference between x1 and x2 and difference between y1 and y2
+	unsigned char x,y,temp;//x,y: location of pixel.  temp: temp value for exchange of x and y
+	int e;//adjust whether should be increased
+	bit k,j;//k: upper slope flag.  j: negative slope flag
 	dx=x2-x1;
 	dy=y2-y1;
-	e=-dx;
+	//if the line is not from high to low, change it.
+	if((dx<=0 && dy<=0) || (dx>=0 && dy<=0)){
+		temp=x2;
+		x2=x1;
+		x1=temp;
+		temp=y2;
+		y2=y1;
+		y1=temp;
+		dx=x2-x1;
+		dy=y2-y1;
+	}
+	//if negative slope, change to positive and get flag
+	if(dx<0){
+		temp=x2;
+		x2=x1;
+		x1=temp;
+		dx=x2-x1;
+		j=1;
+	}else{
+		j=0;
+	}
+	//if upper slope, get flag
+	if(dx>=dy){
+		k=1;	
+	}else{
+		k=0;
+	}
+	//Different slope, different default e
+	if(k){
+		e=-dx;
+	}else{
+		e=-dy;
+	}
+	//first point
 	x=x1;
 	y=y1;
+	//if has been finished final point, finish drawing.
 	while(x<=x2 && y<=y2){
-		set_dot(x,y);
-		e=e+2*dy;
+		//if the original slope is negative slope, should  change points back
+		if(j){
+			set_dot(x1+x2-x,y);
+		}else{
+			set_dot(x,y);
+		}
+		//different slope, different change of e
+		if(k){
+			e=e+2*dy;
+		}else{
+			e=e+2*dx;
+		}
+		//according to e, adjust whether should go upper
 		if(e<=0){
-			x+=1;
+			//different slope, different way to go upper
+			if(k){
+				x+=1;
+			}else{
+				y+=1;
+			}
 		}else{
 			x+=1;
 			y+=1;
-			e=e-2*dx;
+			//different slope, different change of e
+			if(k){
+				e=e-2*dx;
+			}else{
+				e=e-2*dy;
+			}
 		}
 	}
 }

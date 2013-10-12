@@ -4,2410 +4,551 @@
 <h1>µVision3 Build Log</h1>
 <h2>Project:</h2>
 C:\Documents and Settings\Administrator\My Documents\GitHub\QC12864B_8051\glcd.uv2
-Project File Date:  10/11/2013
+Project File Date:  10/12/2013
 
 <h2>Output:</h2>
 Build target 'Target 1'
 compiling glcd_test.c...
-GLCD.H(18): error C141: syntax error near 'P2', expected '='
-GLCD.H(19): error C141: syntax error near 'P2', expected '='
-GLCD.H(20): error C141: syntax error near 'P2', expected '='
-GLCD.H(21): error C141: syntax error near 'P2', expected '='
-GLCD.H(22): error C141: syntax error near 'P2', expected '='
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
 compiling glcd.c...
-GLCD.H(18): error C141: syntax error near 'P2', expected '='
-GLCD.H(18): error C202: 'P2': undefined identifier
-GLCD.H(19): error C141: syntax error near 'P2', expected '='
-GLCD.H(20): error C141: syntax error near 'P2', expected '='
-GLCD.H(21): error C141: syntax error near 'P2', expected '='
-GLCD.H(22): error C141: syntax error near 'P2', expected '='
-GLCD.H(26): error C141: syntax error near ')'
-GLCD.C(6): error C202: 'RS': undefined identifier
-GLCD.C(7): error C202: 'RW': undefined identifier
-GLCD.C(8): error C202: 'En': undefined identifier
-GLCD.C(10): error C202: 'En': undefined identifier
-GLCD.C(11): error C202: 'busy': undefined identifier
-GLCD.C(17): error C183: unmodifiable lvalue
-GLCD.C(22): error C202: 'RS': undefined identifier
-GLCD.C(23): error C202: 'RW': undefined identifier
-GLCD.C(24): error C202: 'En': undefined identifier
-GLCD.C(26): error C202: 'En': undefined identifier
-GLCD.C(29): error C141: syntax error near ')'
-GLCD.C(31): error C202: 'RS': undefined identifier
-GLCD.C(32): error C202: 'RW': undefined identifier
-GLCD.C(33): error C202: 'En': undefined identifier
-GLCD.C(34): error C141: syntax error near 'data'
-GLCD.C(35): error C202: 'En': undefined identifier
-GLCD.C(40): error C202: 'RET': undefined identifier
-GLCD.C(41): error C202: 'RET': undefined identifier
-GLCD.C(42): error C202: 'RET': undefined identifier
+GLCD.C(126): error C202: 't2': undefined identifier
+GLCD.C(137): error C141: syntax error near '}'
 Target not created
 Build target 'Target 1'
 compiling glcd_test.c...
-GLCD.H(18): error C141: syntax error near 'P2', expected '='
-GLCD.H(19): error C141: syntax error near 'P2', expected '='
-GLCD.H(20): error C141: syntax error near 'P2', expected '='
-GLCD.H(21): error C141: syntax error near 'P2', expected '='
-GLCD.H(22): error C141: syntax error near 'P2', expected '='
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
 compiling glcd.c...
-GLCD.H(18): error C141: syntax error near 'P2', expected '='
-GLCD.H(18): error C202: 'P2': undefined identifier
-GLCD.H(19): error C141: syntax error near 'P2', expected '='
-GLCD.H(20): error C141: syntax error near 'P2', expected '='
-GLCD.H(21): error C141: syntax error near 'P2', expected '='
-GLCD.H(22): error C141: syntax error near 'P2', expected '='
-GLCD.H(26): error C141: syntax error near ')'
-GLCD.C(6): error C202: 'RS': undefined identifier
-GLCD.C(7): error C202: 'RW': undefined identifier
-GLCD.C(8): error C202: 'En': undefined identifier
-GLCD.C(10): error C202: 'En': undefined identifier
-GLCD.C(11): error C202: 'busy': undefined identifier
-GLCD.C(17): error C183: unmodifiable lvalue
-GLCD.C(22): error C202: 'RS': undefined identifier
-GLCD.C(23): error C202: 'RW': undefined identifier
-GLCD.C(24): error C202: 'En': undefined identifier
-GLCD.C(26): error C202: 'En': undefined identifier
-GLCD.C(29): error C141: syntax error near ')'
-GLCD.C(31): error C202: 'RS': undefined identifier
-GLCD.C(32): error C202: 'RW': undefined identifier
-GLCD.C(33): error C202: 'En': undefined identifier
-GLCD.C(34): error C141: syntax error near 'data'
-GLCD.C(35): error C202: 'En': undefined identifier
-GLCD.C(40): error C202: 'RET': undefined identifier
-GLCD.C(41): error C202: 'RET': undefined identifier
-GLCD.C(42): error C202: 'RET': undefined identifier
+GLCD.C(137): error C141: syntax error near '}'
 Target not created
 Build target 'Target 1'
 compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
 compiling glcd.c...
-GLCD.H(18): error C202: 'P2': undefined identifier
-GLCD.H(19): error C202: 'P2': undefined identifier
-GLCD.H(20): error C202: 'P2': undefined identifier
-GLCD.H(21): error C202: 'P2': undefined identifier
-GLCD.H(22): error C202: 'P2': undefined identifier
-GLCD.H(26): error C141: syntax error near ')'
-GLCD.C(6): error C202: 'RS': undefined identifier
-GLCD.C(7): error C202: 'RW': undefined identifier
-GLCD.C(8): error C202: 'En': undefined identifier
-GLCD.C(10): error C202: 'En': undefined identifier
-GLCD.C(11): error C202: 'busy': undefined identifier
-GLCD.C(17): error C183: unmodifiable lvalue
-GLCD.C(22): error C202: 'RS': undefined identifier
-GLCD.C(23): error C202: 'RW': undefined identifier
-GLCD.C(24): error C202: 'En': undefined identifier
-GLCD.C(26): error C202: 'En': undefined identifier
-GLCD.C(29): error C141: syntax error near ')'
-GLCD.C(31): error C202: 'RS': undefined identifier
-GLCD.C(32): error C202: 'RW': undefined identifier
-GLCD.C(33): error C202: 'En': undefined identifier
-GLCD.C(34): error C141: syntax error near 'data'
-GLCD.C(35): error C202: 'En': undefined identifier
-GLCD.C(40): error C202: 'RET': undefined identifier
-GLCD.C(41): error C202: 'RET': undefined identifier
-GLCD.C(42): error C202: 'RET': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-GLCD_TEST.C(6): error C141: syntax error near '}'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(26): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=9.0 xdata=0 code=16
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=9.0 xdata=0 code=16
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(5): error C141: syntax error near 'void'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(6): error C141: syntax error near 'void'
-GLCD_TEST.C(6): error C141: syntax error near '{'
-GLCD_TEST.C(7): error C231: 'lcd_init': redefinition
-GLCD_TEST.C(9): error C231: '_lcd_write_command': redefinition
-GLCD_TEST.C(10): error C141: syntax error near 'for'
-GLCD_TEST.C(10): error C141: syntax error near 'char', expected ')'
-GLCD_TEST.C(10): error C129: missing ';' before '<'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(6): error C141: syntax error near 'void'
-GLCD_TEST.C(6): error C141: syntax error near '{'
-GLCD_TEST.C(7): error C231: 'lcd_init': redefinition
-GLCD_TEST.C(9): error C231: '_lcd_write_command': redefinition
-GLCD_TEST.C(10): error C141: syntax error near 'for'
-GLCD_TEST.C(10): error C141: syntax error near 'char', expected ')'
-GLCD_TEST.C(10): error C129: missing ';' before '<'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(6): error C141: syntax error near 'void'
-GLCD_TEST.C(6): error C141: syntax error near '{'
-GLCD_TEST.C(7): error C231: 'lcd_init': redefinition
-GLCD_TEST.C(9): error C231: '_lcd_write_command': redefinition
-GLCD_TEST.C(10): error C141: syntax error near 'for'
-GLCD_TEST.C(10): error C141: syntax error near 'char', expected ')'
-GLCD_TEST.C(10): error C129: missing ';' before '<'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(6): error C141: syntax error near 'void'
-GLCD_TEST.C(6): error C141: syntax error near '{'
-GLCD_TEST.C(7): error C231: 'lcd_init': redefinition
-GLCD_TEST.C(9): error C231: '_lcd_write_command': redefinition
-GLCD_TEST.C(10): error C141: syntax error near 'for'
-GLCD_TEST.C(10): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(10): error C129: missing ';' before '<'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C202: 'addr': undefined identifier
-GLCD_TEST.C(10): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(10): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C141: syntax error near ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0010H
-Program Size: data=9.0 xdata=0 code=25
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(36): error C202: 'busy': undefined identifier
-GLCD.H(42): error C183: unmodifiable lvalue
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(42): error C183: unmodifiable lvalue
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(42): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD.H(42): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(8): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(8): error C202: 'addr': undefined identifier
-GLCD_TEST.C(9): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(9): error C202: 'i': undefined identifier
-GLCD_TEST.C(10): error C202: 'addr': undefined identifier
-GLCD_TEST.C(11): error C202: 'i': undefined identifier
-GLCD_TEST.C(12): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(29): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(72): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(72): error C202: 'addr': undefined identifier
-GLCD_TEST.C(73): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(73): error C202: 'i': undefined identifier
-GLCD_TEST.C(74): error C202: 'addr': undefined identifier
-GLCD_TEST.C(75): error C202: 'i': undefined identifier
-GLCD_TEST.C(76): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(71): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(71): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(26): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(70): error C202: 'i': undefined identifier
-GLCD_TEST.C(71): error C202: 'addr': undefined identifier
-GLCD_TEST.C(72): error C202: 'i': undefined identifier
-GLCD_TEST.C(73): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(26): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(70): error C202: 'i': undefined identifier
-GLCD_TEST.C(71): error C202: 'addr': undefined identifier
-GLCD_TEST.C(72): error C202: 'i': undefined identifier
-GLCD_TEST.C(73): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): error C202: 'Tempvalue': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(69): error C202: 'i': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C202: 'i': undefined identifier
-GLCD_TEST.C(71): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(68): error C141: syntax error near 'unsigned'
-GLCD_TEST.C(68): error C202: 'addr': undefined identifier
-GLCD_TEST.C(69): error C202: 'addr': undefined identifier
-GLCD_TEST.C(70): error C202: 'addr': undefined identifier
-GLCD_TEST.C(71): error C202: 'i': undefined identifier
-GLCD_TEST.C(72): error C183: unmodifiable lvalue
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(66): error C141: syntax error near 'line', expected ')'
-GLCD_TEST.C(68): error C202: 'line': undefined identifier
-GLCD_TEST.C(70): error C202: 'line': undefined identifier
-GLCD_TEST.C(72): error C202: 'line': undefined identifier
-GLCD_TEST.C(74): error C202: 'line': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(66): error C141: syntax error near '*', expected ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(76): warning C206: 'Wr_Command': missing function-prototype
-GLCD_TEST.C(76): error C267: 'Wr_Command': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(76): error C208: '_lcd_write_command': too many actual parameters
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-Program Size: data=12.0 xdata=0 code=220
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(85): warning C209: '_Display_String': too few actual parameters
-GLCD_TEST.C(85): warning C214: 'Argument': conversion: pointer to non-pointer
-linking...
-Program Size: data=12.0 xdata=0 code=225
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=231
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=231
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=234
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=234
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0074H
-Program Size: data=14.0 xdata=0 code=125
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 007DH
-Program Size: data=14.0 xdata=0 code=129
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 007DH
-Program Size: data=14.0 xdata=0 code=129
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 007DH
-Program Size: data=14.0 xdata=0 code=129
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(25): warning C209: '_Display_String': too few actual parameters
-GLCD_TEST.C(25): warning C214: 'Argument': conversion: pointer to non-pointer
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0074H
-Program Size: data=14.0 xdata=0 code=134
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0068H
-Program Size: data=14.0 xdata=0 code=140
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 6 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0068H
-Program Size: data=14.0 xdata=0 code=140
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 6 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0068H
-Program Size: data=14.0 xdata=0 code=140
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 6 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0068H
-Program Size: data=14.0 xdata=0 code=140
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 6 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-Program Size: data=12.0 xdata=0 code=237
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.H(18): error C202: 'P2': undefined identifier
-GLCD.H(19): error C202: 'P2': undefined identifier
-GLCD.H(20): error C202: 'P2': undefined identifier
-GLCD.H(21): error C202: 'P2': undefined identifier
-GLCD.H(22): error C202: 'P2': undefined identifier
-GLCD.C(6): error C202: 'RS': undefined identifier
-GLCD.C(7): error C202: 'RW': undefined identifier
-GLCD.C(8): error C202: 'En': undefined identifier
-GLCD.C(10): error C202: 'En': undefined identifier
-GLCD.C(17): error C202: 'RS': undefined identifier
-GLCD.C(18): error C202: 'RW': undefined identifier
-GLCD.C(19): error C202: 'En': undefined identifier
-GLCD.C(21): error C202: 'En': undefined identifier
-GLCD.C(26): error C202: 'RS': undefined identifier
-GLCD.C(27): error C202: 'RW': undefined identifier
-GLCD.C(28): error C202: 'En': undefined identifier
-GLCD.C(30): error C202: 'En': undefined identifier
-GLCD.C(35): error C202: 'RET': undefined identifier
-GLCD.C(36): error C202: 'RET': undefined identifier
-GLCD.C(37): error C202: 'RET': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=247
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_COMMAND
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 002AH
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _LCD_WRITE_DATA
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0042H
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  LCD_INIT
-    MODULE:  glcd_test.obj (GLCD_TEST)
-    ADDRESS: 0068H
-Program Size: data=14.0 xdata=0 code=140
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 6 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=247
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=247
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=250
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(4): warning C258: 'string_1': mspace on parameter ignored
-GLCD_TEST.C(4): error C244: 'string_1': can't initialize, bad type or class
-compiling glcd.c...
-GLCD.C(4): error C132: 'waiting': not in formal parameter list
-GLCD.C(4): error C141: syntax error near '{'
-GLCD.C(6): error C244: 'RS': can't initialize, bad type or class
-GLCD.C(6): error C132: 'RS': not in formal parameter list
-GLCD.C(7): error C244: 'RW': can't initialize, bad type or class
-GLCD.C(7): error C132: 'RW': not in formal parameter list
-GLCD.C(8): error C244: 'En': can't initialize, bad type or class
-GLCD.C(8): error C132: 'En': not in formal parameter list
-GLCD.C(9): error C244: 'P0': can't initialize, bad type or class
-GLCD.C(9): error C132: 'P0': not in formal parameter list
-GLCD.C(10): error C244: 'En': can't initialize, bad type or class
-GLCD.C(10): error C132: 'En': not in formal parameter list
-GLCD.C(11): error C141: syntax error near 'if'
-GLCD.C(11): error C141: syntax error near '&', expected ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(4): warning C258: 'string_1': mspace on parameter ignored
-GLCD_TEST.C(4): error C244: 'string_1': can't initialize, bad type or class
-compiling glcd.c...
-GLCD.C(4): error C132: 'waiting': not in formal parameter list
-GLCD.C(4): error C141: syntax error near '{'
-GLCD.C(6): error C244: 'RS': can't initialize, bad type or class
-GLCD.C(6): error C132: 'RS': not in formal parameter list
-GLCD.C(7): error C244: 'RW': can't initialize, bad type or class
-GLCD.C(7): error C132: 'RW': not in formal parameter list
-GLCD.C(8): error C244: 'En': can't initialize, bad type or class
-GLCD.C(8): error C132: 'En': not in formal parameter list
-GLCD.C(9): error C244: 'P0': can't initialize, bad type or class
-GLCD.C(9): error C132: 'P0': not in formal parameter list
-GLCD.C(10): error C244: 'En': can't initialize, bad type or class
-GLCD.C(10): error C132: 'En': not in formal parameter list
-GLCD.C(11): error C141: syntax error near 'if'
-GLCD.C(11): error C141: syntax error near '&', expected ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(4): warning C258: 'string_1': mspace on parameter ignored
-GLCD_TEST.C(4): error C244: 'string_1': can't initialize, bad type or class
-compiling glcd.c...
-GLCD.C(4): error C132: 'waiting': not in formal parameter list
-GLCD.C(4): error C141: syntax error near '{'
-GLCD.C(6): error C244: 'RS': can't initialize, bad type or class
-GLCD.C(6): error C132: 'RS': not in formal parameter list
-GLCD.C(7): error C244: 'RW': can't initialize, bad type or class
-GLCD.C(7): error C132: 'RW': not in formal parameter list
-GLCD.C(8): error C244: 'En': can't initialize, bad type or class
-GLCD.C(8): error C132: 'En': not in formal parameter list
-GLCD.C(9): error C244: 'P0': can't initialize, bad type or class
-GLCD.C(9): error C132: 'P0': not in formal parameter list
-GLCD.C(10): error C244: 'En': can't initialize, bad type or class
-GLCD.C(10): error C132: 'En': not in formal parameter list
-GLCD.C(11): error C141: syntax error near 'if'
-GLCD.C(11): error C141: syntax error near '&', expected ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=240
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=240
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=240
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=240
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=236
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=233
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  DELAY5MS
-    MODULE:  glcd.obj (GLCD)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  DELAY5MS
-    MODULE:  glcd.obj (GLCD)
-    ADDRESS: 0045H
-Program Size: data=12.0 xdata=0 code=206
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(34): warning C206: 'delay5ms': missing function-prototype
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  DELAY5MS
-    MODULE:  glcd.obj (GLCD)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  DELAY5MS
-    MODULE:  glcd.obj (GLCD)
-    ADDRESS: 0045H
-Program Size: data=12.0 xdata=0 code=206
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=200
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=198
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=198
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=198
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=198
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=198
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=203
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=205
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=205
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=205
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=205
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=205
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-glcd.h(42): warning C317: attempt to redefine macro 'ExteCommand'
-compiling glcd.c...
-glcd.h(42): warning C317: attempt to redefine macro 'ExteCommand'
-linking...
-Program Size: data=12.0 xdata=0 code=202
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=202
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=202
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): warning C206: 'strlen': missing function-prototype
-GLCD.C(57): error C267: 'strlen': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): warning C206: 'strlen': missing function-prototype
-GLCD.C(57): error C267: 'strlen': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C208: '_display_string': too many actual parameters
-compiling glcd.c...
-GLCD.C(43): warning C236: '_display_string': different length of parameter lists
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=206
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=12.0 xdata=0 code=207
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(58): warning C206: 'strln': missing function-prototype
-GLCD.C(58): error C267: 'strln': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): warning C206: 'strln': missing function-prototype
-GLCD.C(57): error C267: 'strln': requires ANSI-style prototype
-GLCD.C(63): error C231: '_strln': redefinition
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(4): warning C258: 'string_1': mspace on parameter ignored
-GLCD_TEST.C(4): error C244: 'string_1': can't initialize, bad type or class
-compiling glcd.c...
-GLCD.C(4): error C132: 'waiting': not in formal parameter list
-GLCD.C(4): error C141: syntax error near '{'
-GLCD.C(6): error C244: 'RS': can't initialize, bad type or class
-GLCD.C(6): error C132: 'RS': not in formal parameter list
-GLCD.C(7): error C244: 'RW': can't initialize, bad type or class
-GLCD.C(7): error C132: 'RW': not in formal parameter list
-GLCD.C(8): error C244: 'En': can't initialize, bad type or class
-GLCD.C(8): error C132: 'En': not in formal parameter list
-GLCD.C(9): error C244: 'P0': can't initialize, bad type or class
-GLCD.C(9): error C132: 'P0': not in formal parameter list
-GLCD.C(10): error C244: 'En': can't initialize, bad type or class
-GLCD.C(10): error C132: 'En': not in formal parameter list
-GLCD.C(11): error C141: syntax error near 'if'
-GLCD.C(11): error C141: syntax error near '&', expected ')'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C208: '_display_string': too many actual parameters
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(57): error C214: illegal pointer conversion
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=249
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=248
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=251
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-GLCD_TEST.C(8): error C214: illegal pointer conversion
-compiling glcd.c...
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=251
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=252
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=18.0 xdata=0 code=247
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=18.0 xdata=0 code=247
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=17.0 xdata=0 code=251
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _STRLN
-    MODULE:  glcd.obj (GLCD)
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _STRLN
-    MODULE:  glcd.obj (GLCD)
-    ADDRESS: 000CH
-Program Size: data=14.0 xdata=0 code=223
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=244
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=244
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=253
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=255
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=255
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=255
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=255
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-Program Size: data=14.0 xdata=0 code=269
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-GLCD.C(87): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-GLCD.C(87): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-GLCD.C(87): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(84): error C141: syntax error near 'unsigned'
-GLCD.C(84): error C202: 'k': undefined identifier
-GLCD.C(85): error C141: syntax error near 'unsigned'
-GLCD.C(85): error C202: 'm': undefined identifier
-GLCD.C(86): error C202: 'k': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(87): warning C206: 'lcd_wirte_command': missing function-prototype
-GLCD.C(87): error C267: 'lcd_wirte_command': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(92): warning C206: 'lcd_wirte_command': missing function-prototype
-GLCD.C(92): error C267: 'lcd_wirte_command': requires ANSI-style prototype
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_SET_DOT?GLCD
-Program Size: data=16.0 xdata=0 code=381
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=16.0 xdata=0 code=376
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=16.0 xdata=0 code=376
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=16.0 xdata=0 code=376
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=386
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=386
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=386
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=386
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=381
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=381
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=381
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-Program Size: data=14.0 xdata=0 code=358
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-Program Size: data=14.0 xdata=0 code=358
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-Program Size: data=14.0 xdata=0 code=358
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-Program Size: data=14.0 xdata=0 code=358
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(78): warning C280: 'x': unreferenced local variable
-GLCD.C(78): warning C280: 'y': unreferenced local variable
-GLCD.C(80): warning C280: 'm': unreferenced local variable
-GLCD.C(80): warning C280: 'n': unreferenced local variable
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=20.0 xdata=0 code=288
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(78): warning C280: 'x': unreferenced local variable
-GLCD.C(78): warning C280: 'y': unreferenced local variable
-GLCD.C(80): warning C280: 'm': unreferenced local variable
-GLCD.C(80): warning C280: 'n': unreferenced local variable
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=20.0 xdata=0 code=278
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(78): warning C280: 'x': unreferenced local variable
-GLCD.C(78): warning C280: 'y': unreferenced local variable
-GLCD.C(80): warning C280: 'm': unreferenced local variable
-GLCD.C(80): warning C280: 'n': unreferenced local variable
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=20.0 xdata=0 code=283
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(78): warning C280: 'x': unreferenced local variable
-GLCD.C(78): warning C280: 'y': unreferenced local variable
-GLCD.C(80): warning C280: 'm': unreferenced local variable
-GLCD.C(80): warning C280: 'n': unreferenced local variable
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=20.0 xdata=0 code=288
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=368
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=368
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=369
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=369
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=346
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=347
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=353
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(80): error C141: syntax error near 'unsigned'
-GLCD.C(80): error C202: 'i': undefined identifier
-GLCD.C(81): error C141: syntax error near 'for'
-GLCD.C(82): error C202: 'j': undefined identifier
-GLCD.C(83): error C202: 'x': undefined identifier
-GLCD.C(84): error C202: 'y': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(80): error C141: syntax error near 'unsigned'
-GLCD.C(80): error C202: 'i': undefined identifier
-GLCD.C(81): error C141: syntax error near 'for'
-GLCD.C(82): error C202: 'j': undefined identifier
-GLCD.C(83): error C202: 'i': undefined identifier
-GLCD.C(84): error C202: 'j': undefined identifier
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(80): error C141: syntax error near 'lcd_write_command'
-Target not created
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=395
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?LCD_READ_DATA?GLCD
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=401
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 3 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=14.0 xdata=0 code=435
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?CO?GLCD_TEST
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
-Program Size: data=16.0 xdata=0 code=440
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=445
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=440
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=443
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-linking...
-Program Size: data=14.0 xdata=0 code=443
-creating hex file from "glcd"...
-"glcd" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling glcd_test.c...
-compiling glcd.c...
-GLCD.C(114): warning C280: 'x1': unreferenced local variable
-GLCD.C(114): warning C280: 'y1': unreferenced local variable
-GLCD.C(114): warning C280: 'x2': unreferenced local variable
-GLCD.C(114): warning C280: 'y2': unreferenced local variable
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DRAWLINE?GLCD
-Program Size: data=18.0 xdata=0 code=450
+Program Size: data=21.0 xdata=0 code=542
 creating hex file from "glcd"...
-"glcd" - 0 Error(s), 5 Warning(s).
+"glcd" - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 compiling glcd_test.c...
 compiling glcd.c...
-GLCD.C(114): warning C280: 'x1': unreferenced local variable
-GLCD.C(114): warning C280: 'y1': unreferenced local variable
-GLCD.C(114): warning C280: 'x2': unreferenced local variable
-GLCD.C(114): warning C280: 'y2': unreferenced local variable
 linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DRAWLINE?GLCD
-Program Size: data=18.0 xdata=0 code=450
+Program Size: data=18.0 xdata=0 code=546
 creating hex file from "glcd"...
-"glcd" - 0 Error(s), 5 Warning(s).
+"glcd" - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 compiling glcd_test.c...
 compiling glcd.c...
-GLCD.C(114): warning C280: 'x1': unreferenced local variable
-GLCD.C(114): warning C280: 'y1': unreferenced local variable
-GLCD.C(114): warning C280: 'x2': unreferenced local variable
-GLCD.C(114): warning C280: 'y2': unreferenced local variable
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DRAWLINE?GLCD
-Program Size: data=18.0 xdata=0 code=450
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=525
 creating hex file from "glcd"...
-"glcd" - 0 Error(s), 5 Warning(s).
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=537
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=526
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=526
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=525
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=518
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=23.0 xdata=0 code=514
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=23.0 xdata=0 code=527
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=517
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=517
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=577
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=577
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=564
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(143): error C141: syntax error near '}', expected ';'
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=559
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=559
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=559
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=559
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=573
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=574
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=574
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=574
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=28.0 xdata=0 code=576
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=28.0 xdata=0 code=569
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=566
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=573
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(123): warning C280: 'y2': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=571
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(123): warning C280: 'y2': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=572
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=574
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(123): warning C280: 'y2': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=545
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(125): error C141: syntax error near 'void'
+GLCD.C(125): error C231: '_draw_line': redefinition
+GLCD.C(125): error C141: syntax error near '{'
+GLCD.C(127): error C231: 'dx': redefinition
+GLCD.C(127): error C202: 'x2': undefined identifier
+GLCD.C(128): error C231: 'dy': redefinition
+GLCD.C(128): error C202: 'x2': undefined identifier
+GLCD.C(129): error C231: 'e': redefinition
+GLCD.C(129): error C247: non-address/-constant initializer
+GLCD.C(130): error C231: 'x': redefinition
+GLCD.C(130): error C202: 'x1': undefined identifier
+GLCD.C(131): error C231: 'y': redefinition
+GLCD.C(131): error C202: 'y1': undefined identifier
+GLCD.C(132): error C141: syntax error near 'while'
+GLCD.C(132): error C141: syntax error near '<=', expected ')'
+GLCD.C(132): error C129: missing ';' before '&&'
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+Program Size: data=31.0 xdata=0 code=729
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+Program Size: data=31.0 xdata=0 code=729
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=31.0 xdata=0 code=707
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(136): warning C209: '_display_string': too few actual parameters
+GLCD.C(136): warning C214: 'Argument': conversion: pointer to non-pointer
+linking...
+Program Size: data=31.0 xdata=0 code=723
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(136): warning C209: '_display_string': too few actual parameters
+GLCD.C(136): warning C214: 'Argument': conversion: pointer to non-pointer
+linking...
+Program Size: data=31.0 xdata=0 code=719
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+Program Size: data=31.0 xdata=0 code=725
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+Program Size: data=31.0 xdata=0 code=729
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=31.0 xdata=0 code=708
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=574
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(123): warning C280: 'y2': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=582
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(123): warning C280: 'y2': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=28.0 xdata=0 code=581
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(125): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=29.0 xdata=0 code=569
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=23.0 xdata=0 code=511
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+GLCD.C(125): error C141: syntax error near 'unsigned'
+GLCD.C(126): error C141: syntax error near 'int'
+Target not created
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=541
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=554
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=542
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=22.0 xdata=0 code=532
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_LINE?GLCD
+Program Size: data=22.0 xdata=0 code=532
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=542
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=554
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=549
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=549
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=549
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISPLAY_STRING?GLCD
+Program Size: data=22.0 xdata=0 code=549
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 1 Warning(s).

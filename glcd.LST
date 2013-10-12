@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -102,46 +102,69 @@ line level    source
   91   1      }
   92          
   93          void set_dot(unsigned char x,unsigned char y){
-  94   1              unsigned int k=0x8000;
-  95   1              unsigned char m,n;
-  96   1              lcd_write_command(ExteCommandOn);
-  97   1              if(y>32){
-  98   2                      y=y-32;
-  99   2                      x=x+128;
- 100   2              }
- 101   1              k=k>>x%16;
- 102   1              lcd_write_command((x/16)|0x80);
- 103   1              lcd_write_command(0x80|y);
- 104   1              m=lcd_read_data();
- 105   1              m=lcd_read_data()|k>>8;
- 106   1              n=lcd_read_data()|k;
+  94   1              //initial variables
+  95   1              unsigned int k=0x8000;
+  96   1              unsigned char highdata,lowdata;
+  97   1              //Open external command and graphic display
+  98   1              lcd_write_command(ExteCommandOn);
+  99   1              //According to y, adjust x and y
+ 100   1              if(y>=32){
+ 101   2                      y=y-32;
+ 102   2                      x=x+128;
+ 103   2              }
+ 104   1              //according to x, get which bit will be setted.
+ 105   1              k=k>>x%16;
+ 106   1              //write x and y to prepare to read data
  107   1              lcd_write_command(0x80|y);
  108   1              lcd_write_command((x/16)|0x80);
- 109   1              lcd_write_data(m);
- 110   1              lcd_write_data(n);
- 111   1              lcd_write_command(BasicCommand);
- 112   1      }
- 113          
- 114          void drawline(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){
- 115   1              
- 116   1      }
-*** WARNING C280 IN LINE 114 OF GLCD.C: 'x1': unreferenced local variable
-C51 COMPILER V8.02   GLCD                                                                  10/12/2013 11:02:34 PAGE 3   
+ 109   1              //read exist data and change them to new data.
+ 110   1              highdata=lcd_read_data();
+ 111   1              highdata=lcd_read_data()|k>>8;
+ 112   1              lowdata=lcd_read_data()|k;
+ 113   1              //write x and y to prepare to write data
+ 114   1              lcd_write_command(0x80|y);
+ 115   1              lcd_write_command((x/16)|0x80);
+ 116   1              //write data
+ 117   1              lcd_write_data(highdata);
+C51 COMPILER V8.02   GLCD                                                                  10/12/2013 18:02:49 PAGE 3   
 
-*** WARNING C280 IN LINE 114 OF GLCD.C: 'y1': unreferenced local variable
-*** WARNING C280 IN LINE 114 OF GLCD.C: 'x2': unreferenced local variable
-*** WARNING C280 IN LINE 114 OF GLCD.C: 'y2': unreferenced local variable
+ 118   1              lcd_write_data(lowdata);
+ 119   1              //go back to basic command
+ 120   1              lcd_write_command(BasicCommand);
+ 121   1      }
+ 122          
+ 123          void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){    
+ 124   1              char dx,dy;
+ 125   1              unsigned char x,y;
+ 126   1              int e;
+ 127   1              dx=x2-x1;
+ 128   1              dy=y2-y1;
+ 129   1              e=-dx;
+ 130   1              x=x1;
+ 131   1              y=y1;
+ 132   1              while(x<=x2 && y<=y2){
+ 133   2                      set_dot(x,y);
+ 134   2                      e=e+2*dy;
+ 135   2                      if(e<=0){
+ 136   3                              x+=1;
+ 137   3                      }else{
+ 138   3                              x+=1;
+ 139   3                              y+=1;
+ 140   3                              e=e-2*dx;
+ 141   3                      }
+ 142   2              }
+ 143   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    350    ----
+   CODE SIZE        =    459    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----      11
+   DATA SIZE        =   ----      13
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
 
 
-C51 COMPILATION COMPLETE.  4 WARNING(S),  0 ERROR(S)
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

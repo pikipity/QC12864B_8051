@@ -4,10 +4,9 @@
 Target (Target 1), 0x0000 // Tools: 'MCS-51'
 
 Group (Source Group 1)
-Group (glcd)
 
 File 1,1,<.\glcd_test.c><glcd_test.c> 0x0 
-File 2,1,<.\glcd.c><glcd.c> 0x0 
+File 1,1,<.\glcd.c><glcd.c> 0x0 
 
 
 Options 1,0,0  // Target 'Target 1'

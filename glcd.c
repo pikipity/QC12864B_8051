@@ -91,26 +91,53 @@ void first_page(void){
 }
 
 void set_dot(unsigned char x,unsigned char y){
+	//initial variables
 	unsigned int k=0x8000;
-	unsigned char m,n;
+	unsigned char highdata,lowdata;
+	//Open external command and graphic display
 	lcd_write_command(ExteCommandOn);
-	if(y>32){
+	//According to y, adjust x and y
+	if(y>=32){
 		y=y-32;
 		x=x+128;
 	}
+	//according to x, get which bit will be setted.
 	k=k>>x%16;
-	lcd_write_command((x/16)|0x80);
-	lcd_write_command(0x80|y);
-	m=lcd_read_data();
-	m=lcd_read_data()|k>>8;
-	n=lcd_read_data()|k;
+	//write x and y to prepare to read data
 	lcd_write_command(0x80|y);
 	lcd_write_command((x/16)|0x80);
-	lcd_write_data(m);
-	lcd_write_data(n);
+	//read exist data and change them to new data.
+	highdata=lcd_read_data();
+	highdata=lcd_read_data()|k>>8;
+	lowdata=lcd_read_data()|k;
+	//write x and y	to prepare to write data
+	lcd_write_command(0x80|y);
+	lcd_write_command((x/16)|0x80);
+	//write data
+	lcd_write_data(highdata);
+	lcd_write_data(lowdata);
+	//go back to basic command
 	lcd_write_command(BasicCommand);
 }
 
-void drawline(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){
-	
+void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){	
+	char dx,dy;
+	unsigned char x,y;
+	int e;
+	dx=x2-x1;
+	dy=y2-y1;
+	e=-dx;
+	x=x1;
+	y=y1;
+	while(x<=x2 && y<=y2){
+		set_dot(x,y);
+		e=e+2*dy;
+		if(e<=0){
+			x+=1;
+		}else{
+			x+=1;
+			y+=1;
+			e=e-2*dx;
+		}
+	}
 }

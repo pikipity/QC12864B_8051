@@ -9,8 +9,8 @@ These can be changed below.
 
 -------------------------------------------------------------------------------*/
 
-#ifndef GLCD_H
-#define GLCD_H
+#ifndef __GLCD_H__
+#define __GLCD_H__
 
 //define IO port
 #define LCDdata P0
@@ -46,21 +46,19 @@ sbit RET=P2^4;
 #define weaking 0x0C
 
 
-
 //declare functions
 //Basic functions
-void waiting(void);//Read Busy flag and waiting for Busy flag
-void lcd_write_command(unsigned char command);//write command to LCD
-void lcd_write_data(unsigned char RWdata);//write data to LCD
-unsigned char lcd_read_data(void);//read data from LCD
-void lcd_init(void);//LCD initialization
+extern void waiting(void);//Read Busy flag and waiting for Busy flag
+extern void lcd_write_command(unsigned char command);//write command to LCD
+extern void lcd_write_data(unsigned char RWdata);//write data to LCD
+extern unsigned char lcd_read_data(void);//read data from LCD
+extern void lcd_init(void);//LCD initialization
 //string functions
-void display_string(unsigned char line,unsigned char *string);//display string (default string function)
+extern void display_string(unsigned char line,unsigned char *string);//display string (default string function)
 //figure functions
-void first_page(void);//clear CGRAM
-void set_dot(unsigned char x,unsigned char y);//draw a pixel
-void drawline(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2);//draw a line
-
+extern void first_page(void);//clear CGRAM
+extern void set_dot(unsigned char x,unsigned char y);//draw a pixel
+extern void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2);//draw a line
 
 #endif
  

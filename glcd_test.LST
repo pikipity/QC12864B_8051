@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD_TEST                                                             10/12/2013 11:02:34 PAGE 1   
+C51 COMPILER V8.02   GLCD_TEST                                                             10/12/2013 18:02:49 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD_TEST
@@ -10,25 +10,22 @@ line level    source
    1          #include <reg52.h>
    2          #include "glcd.h"
    3          
-   4          unsigned char code string_1[]={"Test! Now"};
-   5          
-   6          void draw(){
-   7   1              display_string(1,string_1);
-   8   1              set_dot(100,60);
-   9   1      }
-  10          
-  11          void main(){
-  12   1              lcd_init();
-  13   1              first_page();
-  14   1              while(1){
-  15   2                      draw(); 
-  16   2              }
-  17   1      }
+   4          void draw(){
+   5   1              draw_line(0,0,127,63);
+   6   1              set_dot(0,32);
+   7   1      }
+   8          
+   9          void main(){
+  10   1              lcd_init();
+  11   1              first_page();
+  12   1              draw();
+  13   1              while(1);
+  14   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
    CODE SIZE        =     29    ----
-   CONSTANT SIZE    =     10    ----
+   CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----

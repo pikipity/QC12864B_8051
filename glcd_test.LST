@@ -1,9 +1,9 @@
-C51 COMPILER V8.02   GLCD_TEST                                                             10/12/2013 23:17:28 PAGE 1   
+C51 COMPILER V8.02   GLCD_TEST                                                             10/13/2013 14:08:33 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD_TEST
 OBJECT MODULE PLACED IN glcd_test.OBJ
-COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE glcd_test.c BROWSE DEBUG OBJECTEXTEND
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE glcd_test.c OMF2 BROWSE DEBUG
 
 line level    source
 
@@ -11,7 +11,7 @@ line level    source
    2          #include "glcd.h"
    3          
    4          void draw(){
-   5   1              draw_frame();
+   5   1              draw_circle(128/2-1,64/2-1,31,1);
    6   1      }
    7          
    8          void main(){
@@ -23,13 +23,17 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     14    ----
+   CODE SIZE        =     22    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
 END OF MODULE INFORMATION.
 
 

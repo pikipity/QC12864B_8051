@@ -2,7 +2,7 @@
 #include "glcd.h"
 
 void draw(){
-	draw_frame();
+	draw_circle(128/2-1,64/2-1,31,1);
 }
 
 void main(){

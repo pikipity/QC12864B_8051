@@ -1,4 +1,5 @@
 "glcd_test.obj",
 "glcd.obj" 
 TO "glcd" 
-RAMSIZE(256) 
+
+REMOVEUNUSED 

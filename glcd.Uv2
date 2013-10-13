@@ -55,7 +55,7 @@ Options 1,0,0  // Target 'Target 1'
  ROMSZ5=2
  DHOLD5=0
  XHOLD5=0
- T51FL=80
+ T51FL=32848
  XT51FL=0
  CBANKS5=0
  XBANKS5=0
@@ -91,7 +91,7 @@ Options 1,0,0  // Target 'Target 1'
  BankNo=65535
  LX51FL=292
  LX51OVL ()
- LX51MSC ()
+ LX51MSC (REMOVEUNUSED)
  LX51DWN ()
  LX51LFI ()
  LX51ASN ()

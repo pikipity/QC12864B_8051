@@ -91,6 +91,7 @@ void first_page(void){
 }
 
 void set_dot(unsigned char x,unsigned char y){
+	if(x>=0 && x<=127 && y>=0 && y<=63){
 	//initial variables
 	unsigned int k=0x8000;
 	unsigned char highdata,lowdata;
@@ -118,6 +119,7 @@ void set_dot(unsigned char x,unsigned char y){
 	lcd_write_data(lowdata);
 	//go back to basic command
 	lcd_write_command(BasicCommand);
+	}
 }
 
 void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2){	
@@ -181,13 +183,13 @@ void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char 
 		if(e<=0){
 			//different slope, different way to go upper
 			if(k){
-				x+=1;
+				x++;
 			}else{
-				y+=1;
+				y++;
 			}
 		}else{
-			x+=1;
-			y+=1;
+			x++;
+			y++;
 			//different slope, different change of e
 			if(k){
 				e=e-2*dx;
@@ -219,4 +221,45 @@ void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char 
 
 void draw_frame(void){
 	draw_box(0,0,128,64,0);
+}
+
+void draw_circle(unsigned char x,unsigned char y,unsigned char r,bit fill){
+	//x: x of center
+	//y: y of center
+	//r: radius (number of pixels in radius)
+	//fill: fill or not
+	unsigned char a,b;
+	char d;
+	unsigned char i;
+	a=0;
+	b=r-1;
+	d=1-r;
+	while(a<=b){
+		if(fill){
+			for(i=a+x;i>=x-a;i--){
+				set_dot(i,b+y);
+				set_dot(i,y-b);
+			}
+			for(i=b+x;i>=x-b;i--){
+				set_dot(i,a+y);
+				set_dot(i,y-a);
+			}
+		}else{
+			set_dot(a+x,b+y);
+			set_dot(a+x,y-b);
+			set_dot(x-a,b+y);
+			set_dot(x-a,y-b);
+			set_dot(b+x,a+y);
+			set_dot(b+x,y-a);
+			set_dot(x-b,a+y);
+			set_dot(x-b,y-a);	
+		}
+		if(d<0){
+			d+=2*a+3;
+		}else{
+			d+=2*(a-b)+5;
+			b--;
+		}
+		a++;
+	}
 }

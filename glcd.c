@@ -231,10 +231,13 @@ void draw_circle(unsigned char x,unsigned char y,unsigned char r,bit fill){
 	unsigned char a,b;
 	char d;
 	unsigned char i;
+	//initial first point
 	a=0;
 	b=r-1;
+	//initial distance
 	d=1-r;
-	while(a<=b){
+	while(a<=b){//Adjust if circle has been finished
+		//draw circle using a point of 1/8 circle to draw 8 points in all circle
 		if(fill){
 			for(i=a+x;i>=x-a;i--){
 				set_dot(i,b+y);
@@ -254,6 +257,7 @@ void draw_circle(unsigned char x,unsigned char y,unsigned char r,bit fill){
 			set_dot(x-b,a+y);
 			set_dot(x-b,y-a);	
 		}
+		//use distance to adjust next point.
 		if(d<0){
 			d+=2*a+3;
 		}else{

@@ -62,6 +62,8 @@ extern void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigne
 extern void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char num_y,bit fill);//draw a box
 extern void draw_frame(void);//draw the frame
 extern void draw_circle(unsigned char x,unsigned char y,unsigned char r,bit fill);//draw circle
+extern void draw_8bits(unsigned char x,unsigned char y,unsigned char data8bit);//draw 8 bit in x axis
+extern void draw_picture(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture);//draw a picture
 
 #endif
  

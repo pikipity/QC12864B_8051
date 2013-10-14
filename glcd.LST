@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/13/2013 14:08:33 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/13/2013 14:08:33 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -126,7 +126,7 @@ line level    source
  115   2              lcd_write_command(0x80|y);
  116   2              lcd_write_command((x/16)|0x80);
  117   2              //write data
-C51 COMPILER V8.02   GLCD                                                                  10/13/2013 14:08:33 PAGE 3   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 3   
 
  118   2              lcd_write_data(highdata);
  119   2              lcd_write_data(lowdata);
@@ -190,7 +190,7 @@ line level    source
  177   2                      if(k){
  178   3                              e=e+2*dy;
  179   3                      }else{
-C51 COMPILER V8.02   GLCD                                                                  10/13/2013 14:08:33 PAGE 4   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 4   
 
  180   3                              e=e+2*dx;
  181   3                      }
@@ -246,35 +246,35 @@ line level    source
  231   1              unsigned char a,b;
  232   1              char d;
  233   1              unsigned char i;
- 234   1              a=0;
- 235   1              b=r-1;
- 236   1              d=1-r;
- 237   1              while(a<=b){
- 238   2                      if(fill){
- 239   3                              for(i=a+x;i>=x-a;i--){
- 240   4                                      set_dot(i,b+y);
- 241   4                                      set_dot(i,y-b);
-C51 COMPILER V8.02   GLCD                                                                  10/13/2013 14:08:33 PAGE 5   
+ 234   1              //initial first point
+ 235   1              a=0;
+ 236   1              b=r-1;
+ 237   1              //initial distance
+ 238   1              d=1-r;
+ 239   1              while(a<=b){//Adjust if circle has been finished
+ 240   2                      //draw circle using a point of 1/8 circle to draw 8 points in all circle
+ 241   2                      if(fill){
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 5   
 
- 242   4                              }
- 243   3                              for(i=b+x;i>=x-b;i--){
- 244   4                                      set_dot(i,a+y);
- 245   4                                      set_dot(i,y-a);
- 246   4                              }
- 247   3                              //draw_line(a+x,b+y,x-a,b+y);
- 248   3                              //draw_line(a+x,y-b,x-a,y-b);
- 249   3                              //draw_line(b+x,a+y,x-b,a+y);
- 250   3                              //draw_line(b+x,y-a,x-b,y-a);
- 251   3                      }else{
- 252   3                              set_dot(a+x,b+y);
- 253   3                              set_dot(a+x,y-b);
- 254   3                              set_dot(x-a,b+y);
- 255   3                              set_dot(x-a,y-b);
- 256   3                              set_dot(b+x,a+y);
- 257   3                              set_dot(b+x,y-a);
- 258   3                              set_dot(x-b,a+y);
- 259   3                              set_dot(x-b,y-a);       
- 260   3                      }
+ 242   3                              for(i=a+x;i>=x-a;i--){
+ 243   4                                      set_dot(i,b+y);
+ 244   4                                      set_dot(i,y-b);
+ 245   4                              }
+ 246   3                              for(i=b+x;i>=x-b;i--){
+ 247   4                                      set_dot(i,a+y);
+ 248   4                                      set_dot(i,y-a);
+ 249   4                              }
+ 250   3                      }else{
+ 251   3                              set_dot(a+x,b+y);
+ 252   3                              set_dot(a+x,y-b);
+ 253   3                              set_dot(x-a,b+y);
+ 254   3                              set_dot(x-a,y-b);
+ 255   3                              set_dot(b+x,a+y);
+ 256   3                              set_dot(b+x,y-a);
+ 257   3                              set_dot(x-b,a+y);
+ 258   3                              set_dot(x-b,y-a);       
+ 259   3                      }
+ 260   2                      //use distance to adjust next point.
  261   2                      if(d<0){
  262   3                              d+=2*a+3;
  263   3                      }else{
@@ -284,16 +284,53 @@ line level    source
  267   2                      a++;
  268   2              }
  269   1      }
+ 270          
+ 271          void draw_8bits(unsigned char x,unsigned char y,unsigned char data8bit){
+ 272   1              unsigned char i=8;
+ 273   1              bit dot;
+ 274   1              while(i>0){
+ 275   2                      i--;
+ 276   2                      dot=0x01&(data8bit>>i);
+ 277   2                      if(dot){
+ 278   3                              set_dot(x,y);
+ 279   3                      }
+ 280   2                      x++;
+ 281   2              }
+ 282   1      }
+ 283          
+ 284          void draw_picture(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *pictu
+             -re){
+ 285   1              //x_l and y_l must be multiples of 8.
+ 286   1              unsigned char i=0;
+ 287   1              unsigned char j=0;
+ 288   1              int num=0;
+ 289   1              x_l=x_l/8;
+ 290   1              while(j<y_l){
+ 291   2                      j++;
+ 292   2                      while(i<x_l){
+ 293   3                              i++;
+ 294   3                              draw_8bits(x,y,picture[num]);
+ 295   3                              num++;
+ 296   3                              x+=8;
+ 297   3      
+ 298   3                      }
+ 299   2                      x-=8*i;
+ 300   2                      i=0;
+ 301   2                      y++;
+ 302   2              }
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 17:26:05 PAGE 6   
+
+ 303   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =   1015    ----
+   CODE SIZE        =   1160    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----      25
+   DATA SIZE        =   ----      38
    IDATA SIZE       =   ----    ----
-   BIT SIZE         =   ----       4
+   BIT SIZE         =   ----       5
    EDATA SIZE       =   ----    ----
    HDATA SIZE       =   ----    ----
    XDATA CONST SIZE =   ----    ----

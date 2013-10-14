@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -126,7 +126,7 @@ line level    source
  115   2              lcd_write_command(0x80|y);
  116   2              lcd_write_command((x/16)|0x80);
  117   2              //write data
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 3   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 3   
 
  118   2              lcd_write_data(highdata);
  119   2              lcd_write_data(lowdata);
@@ -190,7 +190,7 @@ line level    source
  177   2                      if(k){
  178   3                              e=e+2*dy;
  179   3                      }else{
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 4   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 4   
 
  180   3                              e=e+2*dx;
  181   3                      }
@@ -254,7 +254,7 @@ line level    source
  239   1              while(a<=b){//Adjust if circle has been finished
  240   2                      //draw circle using a point of 1/8 circle to draw 8 points in all circle
  241   2                      if(fill){
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 5   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 5   
 
  242   3                              for(i=a+x;i>=x-a;i--){
  243   4                                      set_dot(i,b+y);
@@ -318,7 +318,7 @@ line level    source
  301   2                      i--;
  302   2                      dot=0x01&(data8bit>>i);
  303   2                      if(dot){
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 6   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 6   
 
  304   3                              set_dot(x,y);
  305   3                      }
@@ -382,7 +382,7 @@ line level    source
  359   2                      y-=8*i;
  360   2                      i=0;
  361   2                      x--;
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 7   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 7   
 
  362   2              }
  363   1      }
@@ -435,7 +435,7 @@ line level    source
  406          
  407          void display_string_58(unsigned char x,unsigned char y,unsigned char *string){
  408   1              unsigned char code ASCII58[] =              // ASCII
- 409   1      {
+ 409   1              {
  410   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00, // - -
  411   1      
  412   1              0x20,0x20,0x20,0x20,0x20,0x00,0x20,0x00, // -!-
@@ -446,7 +446,7 @@ line level    source
  417   1      
  418   1              0x20,0x78,0xC0,0x70,0x28,0xF0,0x20,0x00, // -$-
  419   1      
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 8   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 8   
 
  420   1              0xC0,0xC8,0x10,0x20,0x40,0x98,0x18,0x00, // -%-
  421   1      
@@ -510,7 +510,7 @@ line level    source
  479   1      
  480   1              0x70,0x88,0x80,0x80,0x80,0x88,0x70,0x00, // -C-
  481   1      
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 9   
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 9   
 
  482   1              0xF0,0x88,0x88,0x88,0x88,0x88,0xF0,0x00, // -D-
  483   1      
@@ -574,7 +574,7 @@ line level    source
  541   1      
  542   1              0x80,0x80,0xB0,0xC8,0x88,0xC8,0xB0,0x00, // -b-
  543   1      
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 10  
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 10  
 
  544   1              0x00,0x00,0x70,0x88,0x80,0x80,0x70,0x00, // -c-
  545   1      
@@ -631,14 +631,14 @@ line level    source
  596   1              0x20,0x10,0x10,0x08,0x10,0x10,0x20,0x00, // -}-
  597   1      
  598   1              0x00,0x00,0x40,0xA8,0x10,0x00,0x00,0x00
- 599   1      };
+ 599   1              };
  600   1              unsigned int i;
  601   1              unsigned int maxnum=strlen(string);
  602   1              unsigned int num;
  603   1              unsigned char m,n;
  604   1              unsigned char x_l=1;
  605   1              unsigned char y_l=8;
-C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:27:42 PAGE 11  
+C51 COMPILER V8.02   GLCD                                                                  10/14/2013 22:41:51 PAGE 11  
 
  606   1              unsigned char b=y;
  607   1              unsigned char a=x;

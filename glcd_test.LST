@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD_TEST                                                             10/14/2013 17:26:05 PAGE 1   
+C51 COMPILER V8.02   GLCD_TEST                                                             10/14/2013 21:18:05 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD_TEST
@@ -15,7 +15,7 @@ line level    source
    5          0x80,0x01,0xC0,0x01,0xE0,0xFF,0xF0,0xFF,0xF8,0xFF,0xFC,0xFF,0xFE,0xFF,0xFF,0xFF};
    6          
    7          void draw(){
-   8   1              draw_picture(0,0,16,16,arrow);
+   8   1              draw_picture270(17,17,16,8,arrow);
    9   1      }
   10          
   11          void main(){
@@ -27,7 +27,7 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     31    ----
+   CODE SIZE        =     32    ----
    CONSTANT SIZE    =     32    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

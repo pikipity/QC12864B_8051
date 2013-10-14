@@ -47,23 +47,41 @@ sbit RET=P2^4;
 
 
 //declare functions
+
 //Basic functions
 extern void waiting(void);//Read Busy flag and waiting for Busy flag
 extern void lcd_write_command(unsigned char command);//write command to LCD
 extern void lcd_write_data(unsigned char RWdata);//write data to LCD
 extern unsigned char lcd_read_data(void);//read data from LCD
 extern void lcd_init(void);//LCD initialization
+
 //string functions
-extern void display_string(unsigned char line,unsigned char *string);//display string (default string function)
+//English and Chinese
+extern void display_string(unsigned char line,unsigned char *string);//display string (default string function.)
+//Only English
+
+
 //figure functions
+//basic functions
 extern void first_page(void);//clear CGRAM
 extern void set_dot(unsigned char x,unsigned char y);//draw a pixel
+//basic shapes
 extern void draw_line(unsigned char x1,unsigned char y1,unsigned char x2,unsigned char y2);//draw a line
 extern void draw_box(unsigned char x,unsigned char y,unsigned char num_x,unsigned char num_y,bit fill);//draw a box
 extern void draw_frame(void);//draw the frame
 extern void draw_circle(unsigned char x,unsigned char y,unsigned char r,bit fill);//draw circle
+//draw picture
+//one line picture
 extern void draw_8bits(unsigned char x,unsigned char y,unsigned char data8bit);//draw 8 bit in x axis
+extern void draw_8bits90(unsigned char x,unsigned char y,unsigned char data8bit);//draw 8 bit in x axis	but in 90 degree change system
+extern void draw_8bits180(unsigned char x,unsigned char y,unsigned char data8bit);//draw 8 bit in x axis but in 180 degree change system
+extern void draw_8bits270(unsigned char x,unsigned char y,unsigned char data8bit);//draw 8 bit in x axis but in 270 degree change system
+//mutiple line s picture
 extern void draw_picture(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture);//draw a picture
+extern void draw_picture90(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture);//draw a picture in 90 degree
+extern void draw_picture180(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture);//draw a picture in 180 degree
+extern void draw_picture270(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture);//draw a picture in 270 degree
+
 
 #endif
  

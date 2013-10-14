@@ -1,6 +1,7 @@
 #include <reg52.h>
 #include <string.h>
 #include "glcd.h"
+#include "fonts.h"
 
 void waiting(void){
 	while(1){
@@ -281,8 +282,47 @@ void draw_8bits(unsigned char x,unsigned char y,unsigned char data8bit){
 	}
 }
 
+void draw_8bits90(unsigned char x,unsigned char y,unsigned char data8bit){
+	unsigned char i=8;
+	bit dot;
+	while(i>0){
+		i--;
+		dot=0x01&(data8bit>>i);
+		if(dot){
+			set_dot(x,y);
+		}
+		y++;
+	}
+}
+
+void draw_8bits180(unsigned char x,unsigned char y,unsigned char data8bit){
+	unsigned char i=8;
+	bit dot;
+	while(i>0){
+		i--;
+		dot=0x01&(data8bit>>i);
+		if(dot){
+			set_dot(x,y);
+		}
+		x--;
+	}
+}
+
+void draw_8bits270(unsigned char x,unsigned char y,unsigned char data8bit){
+	unsigned char i=8;
+	bit dot;
+	while(i>0){
+		i--;
+		dot=0x01&(data8bit>>i);
+		if(dot){
+			set_dot(x,y);
+		}
+		y--;
+	}
+}
+
 void draw_picture(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture){
-	//x_l and y_l must be multiples of 8.
+	//x_l and y_l must be multiples of 8. They are the picture's length(in x of original system) and width(in y of original system).
 	unsigned char i=0;
 	unsigned char j=0;
 	int num=0;
@@ -301,3 +341,67 @@ void draw_picture(unsigned char x,unsigned char y,unsigned char x_l,unsigned cha
 		y++;
 	}
 }
+
+void draw_picture90(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture){
+	//x_l and y_l must be multiples of 8. They are the picture's length(in x of original system) and width(in y of original system).
+	unsigned char i=0;
+	unsigned char j=0;
+	int num=0;
+	x_l=x_l/8;
+	while(j<y_l){
+		j++;
+		while(i<x_l){
+			i++;
+			draw_8bits90(x,y,picture[num]);
+			num++;
+			y+=8;
+
+		}
+		y-=8*i;
+		i=0;
+		x--;
+	}
+}
+
+void draw_picture180(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture){
+	//x_l and y_l must be multiples of 8. They are the picture's length(in x of original system) and width(in y of original system).
+	unsigned char i=0;
+	unsigned char j=0;
+	int num=0;
+	x_l=x_l/8;
+	while(j<y_l){
+		j++;
+		while(i<x_l){
+			i++;
+			draw_8bits180(x,y,picture[num]);
+			num++;
+			x-=8;
+
+		}
+		x+=8*i;
+		i=0;
+		y--;
+	}
+}
+
+void draw_picture270(unsigned char x,unsigned char y,unsigned char x_l,unsigned char y_l,unsigned char *picture){
+	//x_l and y_l must be multiples of 8. They are the picture's length(in x of original system) and width(in y of original system).
+	unsigned char i=0;
+	unsigned char j=0;
+	int num=0;
+	x_l=x_l/8;
+	while(j<y_l){
+		j++;
+		while(i<x_l){
+			i++;
+			draw_8bits270(x,y,picture[num]);
+			num++;
+			y-=8;
+
+		}
+		y+=8*i;
+		i=0;
+		x++;
+	}
+}
+

@@ -17,8 +17,8 @@ void lcd_write_command(unsigned char command){
 	waiting();
 	RS=0;
 	RW=0;
-	En=1;
 	LCDdata=command;
+	En=1;
 	En=0;
 }
 
@@ -26,8 +26,8 @@ void lcd_write_data(unsigned char RWdata){
 	waiting();
 	RS=1;
 	RW=0;
-	En=1;
 	LCDdata=RWdata;
+	En=1;
 	En=0;
 }
 
@@ -404,7 +404,8 @@ void draw_picture270(unsigned char x,unsigned char y,unsigned char x_l,unsigned 
 	}
 }
 
-void display_string_58(unsigned char x,unsigned char y,unsigned char *string){
+void display_string_58(unsigned char x,unsigned char y,unsigned char *string, unsigned int degree){
+	//degree: 0, 90, 180, 270
 	unsigned char code ASCII58[] =              // ASCII
 	{
 	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00, // - -
@@ -605,25 +606,94 @@ void display_string_58(unsigned char x,unsigned char y,unsigned char *string){
 	unsigned char y_l=8;
 	unsigned char b=y;
 	unsigned char a=x;
-	for(i=0;i<maxnum;i++){
-		x=a+6*i;
-		y=b;
-		num=(string[i]-32)*8;
-		//
-		m=0;
-		n=0;
-		while(n<y_l){
-			n++;
-			while(m<x_l){
-				m++;
-				draw_8bits(x,y,ASCII58[num]);
-				num++;
-				x+=8;
-
-			}
-			x-=8*m;
+	if(degree==0){
+		for(i=0;i<maxnum;i++){
+			x=a+6*i;
+			y=b;
+			num=(string[i]-32)*8;
+			//
 			m=0;
-			y++;
+			n=0;
+			while(n<y_l){
+				n++;
+				while(m<x_l){
+					m++;
+					draw_8bits(x,y,ASCII58[num]);
+					num++;
+					x+=8;
+
+				}
+				x-=8*m;
+				m=0;
+				y++;
+			}
+		}
+	}
+	else if(degree==90){
+		for(i=0;i<maxnum;i++){
+			x=a;
+			y=b+6*i;
+			num=(string[i]-32)*8;
+			//
+			m=0;
+			n=0;
+			while(n<y_l){
+				n++;
+				while(m<x_l){
+					m++;
+					draw_8bits90(x,y,ASCII58[num]);
+					num++;
+					y+=8;
+
+				}
+				y-=8*m;
+				m=0;
+				x--;
+			}
+		}
+	}else if(degree==180){
+		for(i=0;i<maxnum;i++){
+			x=a-6*i;
+			y=b;
+			num=(string[i]-32)*8;
+			//
+			m=0;
+			n=0;
+			while(n<y_l){
+				n++;
+				while(m<x_l){
+					m++;
+					draw_8bits180(x,y,ASCII58[num]);
+					num++;
+					x-=8;
+
+				}
+				x+=8*m;
+				m=0;
+				y--;
+			}
+		}
+	}else if(degree==270){
+		for(i=0;i<maxnum;i++){
+			x=a;
+			y=b-6*i;
+			num=(string[i]-32)*8;
+			//
+			m=0;
+			n=0;
+			while(n<y_l){
+				n++;
+				while(m<x_l){
+					m++;
+					draw_8bits270(x,y,ASCII58[num]);
+					num++;
+					y-=8;
+
+				}
+				y+=8*m;
+				m=0;
+				x++;
+			}
 		}
 	}
 }

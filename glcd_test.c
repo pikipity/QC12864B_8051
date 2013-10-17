@@ -1,10 +1,10 @@
 #include <reg52.h>
 #include "glcd.h"
 
-unsigned char code string_1[]={"ABCD EFGH abcd efgh !@#$%^&*()_+-"};
+unsigned char code string_1[]={"Test"};
 
 void draw(){
-	display_string_58(0,0,string_1);
+	display_string_58(20,20,string_1,270);
 }
 
 void main(){

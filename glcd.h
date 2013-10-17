@@ -59,7 +59,7 @@ extern void lcd_init(void);//LCD initialization
 //English and Chinese
 extern void display_string(unsigned char line,unsigned char *string);//display string (default string function.)
 //Only English
-extern void display_string_58(unsigned char x,unsigned char y,unsigned char *string);//display ASCII for 5*8 size
+extern void display_string_58(unsigned char x,unsigned char y,unsigned char *string,unsigned int drgree);//display ASCII for 5*8 size
 
 //figure functions
 //basic functions

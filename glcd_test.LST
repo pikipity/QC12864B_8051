@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD_TEST                                                             10/14/2013 22:41:51 PAGE 1   
+C51 COMPILER V8.02   GLCD_TEST                                                             10/17/2013 17:03:06 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD_TEST
@@ -10,10 +10,10 @@ line level    source
    1          #include <reg52.h>
    2          #include "glcd.h"
    3          
-   4          unsigned char code string_1[]={"ABCD EFGH abcd efgh !@#$%^&*()_+-"};
+   4          unsigned char code string_1[]={"Test"};
    5          
    6          void draw(){
-   7   1              display_string_58(0,0,string_1);
+   7   1              display_string_58(20,20,string_1,270);
    8   1      }
    9          
   10          void main(){
@@ -25,8 +25,8 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     23    ----
-   CONSTANT SIZE    =     34    ----
+   CODE SIZE        =     30    ----
+   CONSTANT SIZE    =      5    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----

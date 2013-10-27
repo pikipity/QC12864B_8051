@@ -54,12 +54,14 @@ extern void lcd_write_command(unsigned char command);//write command to LCD
 extern void lcd_write_data(unsigned char RWdata);//write data to LCD
 extern unsigned char lcd_read_data(void);//read data from LCD
 extern void lcd_init(void);//LCD initialization
+extern void delayms(unsigned int timedelay);
 
 //string functions
 //English and Chinese
 extern void display_string(unsigned char line,unsigned char *string);//display string (default string function.)
 //Only English
-extern void display_string_58(unsigned char x,unsigned char y,unsigned char *string,unsigned int drgree);//display ASCII for 5*8 size
+extern void display_string_58(unsigned char x,unsigned char y,unsigned char *string,unsigned int drgree,unsigned char space);//display ASCII for 5*8 size
+extern void display_string_1224(unsigned char x,unsigned char y,unsigned char *string, unsigned int degree,unsigned char space);//display ASCII for 12*24 size
 
 //figure functions
 //basic functions

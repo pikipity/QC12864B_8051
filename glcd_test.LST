@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD_TEST                                                             10/17/2013 17:03:06 PAGE 1   
+C51 COMPILER V8.02   GLCD_TEST                                                             10/27/2013 10:17:37 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD_TEST
@@ -10,26 +10,87 @@ line level    source
    1          #include <reg52.h>
    2          #include "glcd.h"
    3          
-   4          unsigned char code string_1[]={"Test"};
-   5          
-   6          void draw(){
-   7   1              display_string_58(20,20,string_1,270);
-   8   1      }
-   9          
-  10          void main(){
-  11   1              lcd_init();
-  12   1              first_page();
-  13   1              draw();
-  14   1              while(1);
-  15   1      }
+   4          unsigned char testunit=0;
+   5          unsigned char frame=0;
+   6          unsigned char code title[]={" QC12864B Test"};
+   7          unsigned char code author[]={"  by pikipity"};
+   8          unsigned char code string_line[]={"Line Testing"};
+   9          unsigned char code string_box[]={"Box Testing"};
+  10          unsigned char code string_circle[]={"Circle Testing"};
+  11          unsigned char code string_font1[]={"Font Testing"};
+  12          unsigned char code test_string_l[]={"ABCDEFGHIJKLMNOPQRSTU"};
+  13          unsigned char code test_string_l_2[]={"VWXYZ"};
+  14          unsigned char code test_string_s[]={"abcdefghijklmnopqrstu"};
+  15          unsigned char code test_string_s_2[]={"vwxyz"};
+  16          unsigned char code test_string[]={"ABCD"};
+  17          unsigned char code finish[]={"     Finish"};
+  18          
+  19          void draw(){
+  20   1              if(testunit==0){
+  21   2                      display_string(2,title);
+  22   2                      display_string(3,author);
+  23   2              }else if(testunit==1){
+  24   2                      display_string(1,string_line);
+  25   2                      draw_line(20+frame*4,20,40+frame*4,40);
+  26   2                      draw_line(40+frame*4,20,20+frame*4,40);
+  27   2                      draw_line(30+frame*4,20,30+frame*4,40);
+  28   2                      draw_line(20+frame*4,30,40+frame*4,30);
+  29   2              }else if(testunit==2){
+  30   2                      display_string(1,string_box);
+  31   2                      draw_box(20,20,20,20,0);
+  32   2                      draw_box(30+frame*4,30,20,20,1);
+  33   2              }else if(testunit==3){
+  34   2                      display_string(1,string_circle);
+  35   2                      draw_circle(30,30,10,0);
+  36   2                      draw_circle(40+frame*4,40,10,1);
+  37   2              }else if(testunit==4){
+  38   2                      display_string(1,string_font1);
+  39   2                      display_string_58(0,15,test_string_l,0,1);
+  40   2                      display_string_58(0,24,test_string_l_2,0,1);
+  41   2                      display_string_58(0,33,test_string_s,0,1);
+  42   2                      display_string_58(0,42,test_string_s_2,0,1);
+  43   2              }else if(testunit==5){
+  44   2                      display_string(1,string_font1);
+  45   2                      display_string_58(20+frame*2,20,test_string,90,1);
+  46   2              }else if(testunit==6){
+  47   2                      display_string(1,string_font1);
+  48   2                      display_string_58(40+frame*2,30,test_string,180,1);
+  49   2              }else if(testunit==7){
+  50   2                      display_string(1,string_font1);
+  51   2                      display_string_58(20+frame*2,40,test_string,270,1);
+  52   2              }else if(testunit==8){
+  53   2                      display_string(2,finish);
+  54   2              }
+  55   1              if(frame==15){
+C51 COMPILER V8.02   GLCD_TEST                                                             10/27/2013 10:17:37 PAGE 2   
+
+  56   2                      frame=0;
+  57   2                      if(testunit==8){
+  58   3                              ;
+  59   3                      }else{
+  60   3                              testunit++;
+  61   3                      }
+  62   2              }else{
+  63   2                      frame++;
+  64   2              }
+  65   1              delayms(100);
+  66   1      }
+  67          
+  68          void main(){
+  69   1              lcd_init();
+  70   1              while(1){
+  71   2                      first_page();
+  72   2                      draw();
+  73   2              }
+  74   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     30    ----
-   CONSTANT SIZE    =      5    ----
+   CODE SIZE        =    517    ----
+   CONSTANT SIZE    =    155    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----    ----
+   DATA SIZE        =      2    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----

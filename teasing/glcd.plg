@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\My Documents\GitHub\QC12864B_8051\teasing\glcd.uv2
+Project File Date:  10/12/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling glcd_test.c...
+compiling glcd.c...
+linking...
+Program Size: data=37.3 xdata=0 const=5475 code=2714
+creating hex file from "glcd"...
+"glcd" - 0 Error(s), 0 Warning(s).

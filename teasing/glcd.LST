@@ -1,4 +1,4 @@
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 1   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 1   
 
 
 C51 COMPILER V8.02, COMPILATION OF MODULE GLCD
@@ -62,7 +62,7 @@ line level    source
   53   1              lcd_write_command(CurserLeft);
   54   1      }
   55          
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 2   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 2   
 
   56          void display_string(unsigned char line,unsigned char *string){
   57   1      //Use the default command to display string. It can display chinese
@@ -126,7 +126,7 @@ line level    source
  115   2              //write x and y to prepare to write data
  116   2              lcd_write_command(0x80|y);
  117   2              lcd_write_command((x/16)|0x80);
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 3   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 3   
 
  118   2              //write data
  119   2              lcd_write_data(highdata);
@@ -190,7 +190,7 @@ line level    source
  177   2                      //different slope, different change of e
  178   2                      if(k){
  179   3                              e=e+2*dy;
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 4   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 4   
 
  180   3                      }else{
  181   3                              e=e+2*dx;
@@ -254,7 +254,7 @@ line level    source
  239   1              d=1-r;
  240   1              while(a<=b){//Adjust if circle has been finished
  241   2                      //draw circle using a point of 1/8 circle to draw 8 points in all circle
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 5   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 5   
 
  242   2                      if(fill){
  243   3                              for(i=a+x;i>=x-a;i--){
@@ -318,7 +318,7 @@ line level    source
  301   1              while(i>0){
  302   2                      i--;
  303   2                      dot=0x01&(data8bit>>i);
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 6   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 6   
 
  304   2                      if(dot){
  305   3                              set_dot(x,y);
@@ -382,7 +382,7 @@ line level    source
  359   3                      }
  360   2                      y-=8*i;
  361   2                      i=0;
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 7   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 7   
 
  362   2                      x--;
  363   2              }
@@ -446,7 +446,7 @@ line level    source
  416   1              0x50,0x50,0x50,0x00,0x00,0x00,0x00,0x00, // -"-
  417   1      
  418   1              0x50,0x50,0xF8,0x50,0xF8,0x50,0x50,0x00, // -#-
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 8   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 8   
 
  419   1      
  420   1              0x20,0x78,0xC0,0x70,0x28,0xF0,0x20,0x00, // -$-
@@ -510,7 +510,7 @@ line level    source
  478   1              0x20,0x50,0x88,0x88,0xF8,0x88,0x88,0x00, // -A-
  479   1      
  480   1              0xF0,0x88,0x88,0xF0,0x88,0x88,0xF0,0x00, // -B-
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 9   
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 9   
 
  481   1      
  482   1              0x70,0x88,0x80,0x80,0x80,0x88,0x70,0x00, // -C-
@@ -574,7 +574,7 @@ line level    source
  540   1              0x20,0x10,0x08,0x00,0x00,0x00,0x00,0x00, // -`-
  541   1      
  542   1              0x00,0x00,0xE0,0x10,0x70,0x90,0x68,0x00, // -a-
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 10  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 10  
 
  543   1      
  544   1              0x80,0x80,0xB0,0xC8,0x88,0xC8,0xB0,0x00, // -b-
@@ -638,7 +638,7 @@ line level    source
  602   1              unsigned int i;
  603   1              unsigned int maxnum=strlen(string);
  604   1              unsigned int num;
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 11  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 11  
 
  605   1              unsigned char m,n;
  606   1              unsigned char x_l=1;
@@ -702,7 +702,7 @@ line level    source
  664   4                                      n++;
  665   4                                      while(m<x_l){
  666   5                                              m++;
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 12  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 12  
 
  667   5                                              draw_8bits180(x,y,ASCII58[num]);
  668   5                                              num++;
@@ -766,7 +766,7 @@ line level    source
  725   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
  726   1      
  727   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,  // -#-
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 13  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 13  
 
  728   1              0x01,0x80,0x31,0x80,0x31,0x80,0x31,0xE0,
  729   1              0x3F,0x80,0xF1,0x80,0x31,0x80,0x31,0x80,
@@ -830,7 +830,7 @@ line level    source
  787   1              0x06,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
  788   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
  789   1      
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 14  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 14  
 
  790   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,  // -,-
  791   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
@@ -894,7 +894,7 @@ line level    source
  849   1              0x21,0x80,0x61,0x80,0x41,0x80,0xC1,0x80,
  850   1              0xFF,0xF0,0x01,0x80,0x01,0x80,0x01,0x80,
  851   1              0x01,0x80,0x07,0xE0,0x00,0x00,0x00,0x00,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 15  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 15  
 
  852   1      
  853   1              0x00,0x00,0x00,0x00,0x7F,0xC0,0x7F,0xC0,  // -5-
@@ -958,7 +958,7 @@ line level    source
  911   1              0x7F,0xE0,0x7F,0xE0,0x00,0x00,0x00,0x00,
  912   1              0x00,0x00,0x00,0x00,0x7F,0xE0,0x7F,0xE0,
  913   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 16  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 16  
 
  914   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
  915   1      
@@ -1022,7 +1022,7 @@ line level    source
  973   1              0x60,0x60,0x60,0x20,0x60,0x20,0x60,0x00,
  974   1              0x61,0x00,0x61,0x00,0x63,0x00,0x7F,0x00,
  975   1              0x63,0x00,0x61,0x00,0x61,0x00,0x60,0x00,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 17  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 17  
 
  976   1              0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,
  977   1              0x60,0x00,0xF0,0x00,0x00,0x00,0x00,0x00,
@@ -1086,7 +1086,7 @@ line level    source
 1035   1              0x00,0x00,0x00,0x00,0x1F,0x00,0x31,0x80,  // -O-
 1036   1              0x60,0xC0,0xC0,0x60,0xC0,0x60,0xC0,0x60,
 1037   1              0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 18  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 18  
 
 1038   1              0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,
 1039   1              0xC0,0x60,0xC0,0x60,0xC0,0x60,0x60,0xC0,
@@ -1150,7 +1150,7 @@ line level    source
 1097   1      
 1098   1              0x00,0x00,0x00,0x00,0xF0,0xF0,0x60,0x60,  // -X-
 1099   1              0x60,0x60,0x30,0xC0,0x30,0xC0,0x19,0x80,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 19  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 19  
 
 1100   1              0x19,0x80,0x0F,0x00,0x0F,0x00,0x06,0x00,
 1101   1              0x06,0x00,0x0F,0x00,0x0F,0x00,0x19,0x80,
@@ -1214,7 +1214,7 @@ line level    source
 1159   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 1160   1      
 1161   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,  // -a-
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 20  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 20  
 
 1162   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 1163   1              0x00,0x00,0x3F,0x00,0x61,0x80,0xF0,0xC0,
@@ -1278,7 +1278,7 @@ line level    source
 1221   1              0x06,0x00,0x06,0x00,0x06,0x00,0x06,0x00,
 1222   1              0x06,0x00,0x1F,0x80,0x00,0x00,0x00,0x00,
 1223   1      
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 21  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 21  
 
 1224   1              0x00,0x00,0x00,0x00,0x03,0x00,0x07,0x80,  // -j-
 1225   1              0x07,0x80,0x03,0x00,0x00,0x00,0x00,0x00,
@@ -1342,7 +1342,7 @@ line level    source
 1283   1              0x70,0xC0,0x60,0x00,0x60,0x00,0x60,0x00,
 1284   1              0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,
 1285   1              0x60,0x00,0xF0,0x00,0x00,0x00,0x00,0x00,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 22  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 22  
 
 1286   1      
 1287   1              0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,  // -s-
@@ -1406,7 +1406,7 @@ line level    source
 1345   1              0x06,0x00,0x06,0x00,0x0C,0x00,0x18,0x00,
 1346   1              0x18,0x00,0x0C,0x00,0x06,0x00,0x06,0x00,
 1347   1              0x06,0x00,0x06,0x00,0x06,0x00,0x06,0x00,
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 23  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 23  
 
 1348   1              0x06,0x00,0x06,0x00,0x03,0x00,0x01,0xE0,
 1349   1      
@@ -1470,7 +1470,7 @@ line level    source
 1407   3                              num=(string[i]-32)*48;
 1408   3                              //
 1409   3                              m=0;
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 24  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 24  
 
 1410   3                              n=0;
 1411   3                              while(n<y_l){
@@ -1534,7 +1534,7 @@ line level    source
 1469   2              }
 1470   1      }
 1471          
-C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:17:37 PAGE 25  
+C51 COMPILER V8.02   GLCD                                                                  10/27/2013 10:26:20 PAGE 25  
 
 1472          void delayms(unsigned int timedelay){
 1473   1              unsigned int s,j;

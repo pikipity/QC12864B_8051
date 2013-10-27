@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.05                                                               10/27/2013  10:17:37  PAGE 1
+LX51 LINKER/LOCATER V4.05                                                               10/27/2013  10:26:20  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.05, INVOKED BY:
@@ -67,7 +67,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 0008ABH   000902H   000058H   BYTE   UNIT     CODE           ?C?LIB_CODE
 000903H   000938H   000036H   BYTE   UNIT     CODE           ?PR?FIRST_PAGE?GLCD
 000939H   000963H   00002BH   BYTE   UNIT     CODE           ?PR?_DRAW_8BITS?GLCD
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 2
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 2
 
 
 000964H   00098EH   00002BH   BYTE   UNIT     CODE           ?PR?_DRAW_8BITS90?GLCD
@@ -135,7 +135,7 @@ DRAW/GLCD_TEST                 ----- -----  ----- -----
   +--> ?PR?_DISPLAY_STRING?GLCD
   +--> ?PR?_DRAW_LINE?GLCD
   +--> ?PR?_DRAW_BOX?GLCD
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 3
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 3
 
 
   +--> ?PR?_DRAW_CIRCLE?GLCD
@@ -203,7 +203,7 @@ PUBLIC SYMBOLS OF MODULE:  glcd (GLCD_TEST)
       =================================================
 *DEL*:00000000H   DATA     BYTE      ?_display_string_1224?BYTE
       00000021H   DATA     BYTE      ?_display_string_58?BYTE
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 4
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 4
 
 
       00000020H.0 BIT      BIT       ?_draw_box?BIT
@@ -271,7 +271,7 @@ PUBLIC SYMBOLS OF MODULE:  glcd (GLCD_TEST)
 *SFR* 000000B0H.2 DATA     BIT       INT0
 *SFR* 000000B0H.3 DATA     BIT       INT1
 *SFR* 000000B8H   DATA     BYTE      IP
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 5
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 5
 
 
 *SFR* 00000088H   DATA     BIT       IT0
@@ -339,7 +339,7 @@ PUBLIC SYMBOLS OF MODULE:  glcd (GLCD_TEST)
 *SFR* 000000CDH   DATA     BYTE      TH2
 *SFR* 00000098H.1 DATA     BIT       TI
       01001F62H   CONST    ---       title
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 6
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 6
 
 
 *SFR* 0000008AH   DATA     BYTE      TL0
@@ -407,7 +407,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       000000B0H.6 SFRSYM    DATA     BIT       WR
       000000C8H.5 SFRSYM    DATA     BIT       RCLK
       000000C8H.4 SFRSYM    DATA     BIT       TCLK
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 7
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 7
 
 
       00000099H   SFRSYM    DATA     BYTE      SBUF
@@ -475,7 +475,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       01000301H   LINE      CODE     ---       #25
       01000317H   LINE      CODE     ---       #26
       0100032DH   LINE      CODE     ---       #27
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 8
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 8
 
 
       0100033FH   LINE      CODE     ---       #28
@@ -543,7 +543,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       010004D0H   PUBLIC    CODE     ---       _draw_line
       0100075FH   PUBLIC    CODE     ---       _set_dot
       01000903H   PUBLIC    CODE     ---       first_page
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 9
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 9
 
 
       01000853H   PUBLIC    CODE     ---       _display_string
@@ -611,7 +611,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       000000CDH   SFRSYM    DATA     BYTE      TH2
       000000D0H   SFRSYM    DATA     BIT       P
       00000098H.7 SFRSYM    DATA     BIT       SM0
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 10
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 10
 
 
       0000008AH   SFRSYM    DATA     BYTE      TL0
@@ -679,7 +679,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       01000A75H   LINE      CODE     ---       #30
       01000A77H   LINE      CODE     ---       #31
       01000A79H   LINE      CODE     ---       #32
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 11
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 11
 
 
       ---         BLOCKEND  ---      ---       LVL=0
@@ -747,7 +747,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       01000908H   LINE      CODE     ---       #81
       0100090DH   LINE      CODE     ---       #82
       0100090FH   LINE      CODE     ---       #83
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 12
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 12
 
 
       01000911H   LINE      CODE     ---       #84
@@ -815,7 +815,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       010004E1H   LINE      CODE     ---       #134
       01000504H   LINE      CODE     ---       #135
       01000507H   LINE      CODE     ---       #136
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 13
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 13
 
 
       0100050AH   LINE      CODE     ---       #137
@@ -883,7 +883,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       00000024H   SYMBOL    DATA     BYTE      num_y
       00000020H.0 SYMBOL    BIT      BIT       fill
       010007E0H   BLOCK     CODE     NEAR LAB  LVL=1
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 14
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 14
 
 
       00000025H   SYMBOL    DATA     BYTE      i
@@ -951,7 +951,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       01000939H   BLOCK     CODE     ---       LVL=0
       00000002H   SYMBOL    DATA     BYTE      x
       00000035H   SYMBOL    DATA     BYTE      y
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 15
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 15
 
 
       00000036H   SYMBOL    DATA     BYTE      data8bit
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       00000002H   SYMBOL    DATA     BYTE      y
       00000036H   SYMBOL    DATA     BYTE      data8bit
       010009C0H   BLOCK     CODE     NEAR LAB  LVL=1
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 16
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 16
 
 
       00000001H   SYMBOL    DATA     BYTE      i
@@ -1087,7 +1087,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       010000D8H   LINE      CODE     ---       #634
       010000EAH   LINE      CODE     ---       #635
       010000EDH   LINE      CODE     ---       #636
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 17
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 17
 
 
       010000F9H   LINE      CODE     ---       #637
@@ -1155,7 +1155,7 @@ SYMBOL TABLE OF MODULE:  glcd (GLCD_TEST)
       00000006H   SYMBOL    DATA     WORD      timedelay
       010009E5H   BLOCK     CODE     NEAR LAB  LVL=1
       00000004H   SYMBOL    DATA     WORD      s
-LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:17:37  PAGE 18
+LX51 LINKER/LOCATER V4.05                                                             10/27/2013  10:26:20  PAGE 18
 
 
       00000082H   SYMBOL    DATA     WORD      j
